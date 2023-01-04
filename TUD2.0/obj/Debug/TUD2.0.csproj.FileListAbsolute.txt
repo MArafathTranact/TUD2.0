@@ -1,0 +1,16 @@
+C:\Projects\Testing Application\TUD2.0\TUD2.0\bin\Debug\NLog.config
+C:\Projects\Testing Application\TUD2.0\TUD2.0\bin\Debug\TUD2.0.exe.config
+C:\Projects\Testing Application\TUD2.0\TUD2.0\bin\Debug\TUD2.0.exe
+C:\Projects\Testing Application\TUD2.0\TUD2.0\bin\Debug\TUD2.0.pdb
+C:\Projects\Testing Application\TUD2.0\TUD2.0\bin\Debug\Newtonsoft.Json.dll
+C:\Projects\Testing Application\TUD2.0\TUD2.0\bin\Debug\NLog.dll
+C:\Projects\Testing Application\TUD2.0\TUD2.0\bin\Debug\Newtonsoft.Json.xml
+C:\Projects\Testing Application\TUD2.0\TUD2.0\bin\Debug\NLog.xml
+C:\Projects\Testing Application\TUD2.0\TUD2.0\obj\Debug\TUD2.0.csproj.AssemblyReference.cache
+C:\Projects\Testing Application\TUD2.0\TUD2.0\obj\Debug\TUD2.0.csproj.SuggestedBindingRedirects.cache
+C:\Projects\Testing Application\TUD2.0\TUD2.0\obj\Debug\TUD2._0.ProjectInstaller.resources
+C:\Projects\Testing Application\TUD2.0\TUD2.0\obj\Debug\TUD2.0.csproj.GenerateResource.cache
+C:\Projects\Testing Application\TUD2.0\TUD2.0\obj\Debug\TUD2.0.csproj.CoreCompileInputs.cache
+C:\Projects\Testing Application\TUD2.0\TUD2.0\obj\Debug\TUD2.0.csproj.CopyComplete
+C:\Projects\Testing Application\TUD2.0\TUD2.0\obj\Debug\TUD2.0.exe
+C:\Projects\Testing Application\TUD2.0\TUD2.0\obj\Debug\TUD2.0.pdb
