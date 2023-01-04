@@ -10,5 +10,6 @@ namespace TUD2._0.Classes
     {
         public int ID { get; set; }
         public string Description { get; set; }
+        public int IsNetCam { get; set; }
     }
 }

@@ -21,14 +21,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_1C141FA8FAFA4D09A7B5E9CCA3399D3F"
+        "MsmKey" = "8:_1AA7549CDA6048568045FCF144ABBA89"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_24FC034FAEC898AC7F75D04E5B68D1A2"
-        "OwnerKey" = "8:_66662D25FCD64199B34AF8D8F2D6C0F7"
+        "MsmKey" = "8:_1C141FA8FAFA4D09A7B5E9CCA3399D3F"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -39,62 +39,62 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_34351BD8FF754BB29E690599DCE9AEF0"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_51DEA6EF967448A8A0B18B6697BC2883"
+        "MsmKey" = "8:_4B6AC134A1AF145F537185E988751CBE"
+        "OwnerKey" = "8:_59D7430603D44256815DA9B7E340B568"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_59D7430603D44256815DA9B7E340B568"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_66662D25FCD64199B34AF8D8F2D6C0F7"
+        "MsmKey" = "8:_9427E41D67604033B32D66FFB22CB1D2"
         "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_729208F2BE6F4D91A94F6C2DBECADF13"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_B640D8E4892232C856CFB6C20ACD0681"
-        "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_B7E77DD2655ED93389C1CC58915DFB94"
-        "OwnerKey" = "8:_D1A0EB73C7A1232362FCCF88EFB17ABF"
+        "OwnerKey" = "8:_EB3BFDDB852299D00E58665FDBB3F267"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_D1A0EB73C7A1232362FCCF88EFB17ABF"
-        "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F45491BE75E14D08A76A97AAB70D7426"
+        "MsmKey" = "8:_BA161D49CAA643E29B47B65C7E32D4D6"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_FB09FC1DA777450BAC8DAF4042948D53"
+        "MsmKey" = "8:_DAC778496ADB4E78B0CCA06C99CCCEC2"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DCB2BD84DEE24300B03A161D773C15FE"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_EB3BFDDB852299D00E58665FDBB3F267"
+        "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F32FD3A1CD37CCE4073BE27090F9F97D"
+        "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -106,37 +106,37 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_729208F2BE6F4D91A94F6C2DBECADF13"
+        "OwnerKey" = "8:_BA161D49CAA643E29B47B65C7E32D4D6"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_51DEA6EF967448A8A0B18B6697BC2883"
+        "OwnerKey" = "8:_DAC778496ADB4E78B0CCA06C99CCCEC2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FB09FC1DA777450BAC8DAF4042948D53"
+        "OwnerKey" = "8:_1AA7549CDA6048568045FCF144ABBA89"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_66662D25FCD64199B34AF8D8F2D6C0F7"
+        "OwnerKey" = "8:_59D7430603D44256815DA9B7E340B568"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_24FC034FAEC898AC7F75D04E5B68D1A2"
+        "OwnerKey" = "8:_4B6AC134A1AF145F537185E988751CBE"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D1A0EB73C7A1232362FCCF88EFB17ABF"
+        "OwnerKey" = "8:_EB3BFDDB852299D00E58665FDBB3F267"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -148,7 +148,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_B640D8E4892232C856CFB6C20ACD0681"
+        "OwnerKey" = "8:_F32FD3A1CD37CCE4073BE27090F9F97D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -188,6 +188,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -309,6 +317,37 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1AA7549CDA6048568045FCF144ABBA89"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:SecuGen.FDxSDKPro.Windows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4c4e1bcde5201535, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_1AA7549CDA6048568045FCF144ABBA89"
+                    {
+                    "Name" = "8:SecuGen.FDxSDKPro.Windows.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\FingerPrint\\SecuGen.FDxSDKPro.Windows.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1C141FA8FAFA4D09A7B5E9CCA3399D3F"
             {
             "SourcePath" = "8:..\\TUD2.0\\NLog.config"
@@ -327,37 +366,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_24FC034FAEC898AC7F75D04E5B68D1A2"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SecuGen.FDxSDKPro.Windows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4c4e1bcde5201535, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                    "_24FC034FAEC898AC7F75D04E5B68D1A2"
-                    {
-                    "Name" = "8:SecuGen.FDxSDKPro.Windows.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:SecuGen.FDxSDKPro.Windows.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_33EC1D55C51FB3D9EE262A76C0519DAF"
@@ -391,133 +399,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_34351BD8FF754BB29E690599DCE9AEF0"
-            {
-            "SourcePath" = "8:C:\\Backup\\Tranact\\New TUD Work\\Dragon Device Drivers\\Drivers\\secugen\\HamsterFingerprintReader - 5.20.2020\\HamsterFingerprintReader.exe.config"
-            "TargetName" = "8:HamsterFingerprintReader.exe.config"
-            "Tag" = "8:"
-            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_51DEA6EF967448A8A0B18B6697BC2883"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4B6AC134A1AF145F537185E988751CBE"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Interop.wgssSTU, Version=2.15.4.171, Culture=neutral, PublicKeyToken=20000022810869de, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:SecuGen.FDxSDKPro.Windows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4c4e1bcde5201535, processorArchitecture=x86"
                 "ScatterAssemblies"
                 {
-                    "_51DEA6EF967448A8A0B18B6697BC2883"
+                    "_4B6AC134A1AF145F537185E988751CBE"
                     {
-                    "Name" = "8:Interop.wgssSTU.dll"
+                    "Name" = "8:SecuGen.FDxSDKPro.Windows.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:C:\\Backup\\Tranact\\New TUD Work\\Dragon Device Drivers\\Drivers\\Wacom\\Wacom_Install_Files\\Interop.wgssSTU.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_66662D25FCD64199B34AF8D8F2D6C0F7"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:HamsterFingerprintReader, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                    "_66662D25FCD64199B34AF8D8F2D6C0F7"
-                    {
-                    "Name" = "8:HamsterFingerprintReader.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:C:\\Backup\\Tranact\\New TUD Work\\Dragon Device Drivers\\Drivers\\secugen\\HamsterFingerprintReader - 5.20.2020\\HamsterFingerprintReader.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_729208F2BE6F4D91A94F6C2DBECADF13"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ScrapDragon.Signature.Wacom, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
-                "ScatterAssemblies"
-                {
-                    "_729208F2BE6F4D91A94F6C2DBECADF13"
-                    {
-                    "Name" = "8:ScrapDragon.Signature.Wacom.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:C:\\Backup\\Tranact\\New TUD Work\\Dragon Device Drivers\\Drivers\\Wacom\\Wacom_Install_Files\\ScrapDragon.Signature.Wacom.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B640D8E4892232C856CFB6C20ACD0681"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_B640D8E4892232C856CFB6C20ACD0681"
-                    {
-                    "Name" = "8:Newtonsoft.Json.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Newtonsoft.Json.dll"
+            "SourcePath" = "8:SecuGen.FDxSDKPro.Windows.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
@@ -533,6 +428,57 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_59D7430603D44256815DA9B7E340B568"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:HamsterFingerprintReader, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_59D7430603D44256815DA9B7E340B568"
+                    {
+                    "Name" = "8:HamsterFingerprintReader.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\FingerPrint\\HamsterFingerprintReader.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9427E41D67604033B32D66FFB22CB1D2"
+            {
+            "SourcePath" = "8:..\\TUD2.0\\FingerPrint\\HamsterFingerprintReader.exe.config"
+            "TargetName" = "8:HamsterFingerprintReader.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B7E77DD2655ED93389C1CC58915DFB94"
@@ -566,14 +512,96 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D1A0EB73C7A1232362FCCF88EFB17ABF"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BA161D49CAA643E29B47B65C7E32D4D6"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ScrapDragon.Signature.Wacom, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_BA161D49CAA643E29B47B65C7E32D4D6"
+                    {
+                    "Name" = "8:ScrapDragon.Signature.Wacom.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\Waycom\\ScrapDragon.Signature.Wacom.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DAC778496ADB4E78B0CCA06C99CCCEC2"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Interop.wgssSTU, Version=2.15.4.171, Culture=neutral, PublicKeyToken=20000022810869de, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_DAC778496ADB4E78B0CCA06C99CCCEC2"
+                    {
+                    "Name" = "8:Interop.wgssSTU.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\Waycom\\Interop.wgssSTU.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DCB2BD84DEE24300B03A161D773C15FE"
+            {
+            "SourcePath" = "8:..\\TUD2.0\\Waycom\\ScrapDragon.Signature.Wacom.exe.config"
+            "TargetName" = "8:ScrapDragon.Signature.Wacom.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_EB3BFDDB852299D00E58665FDBB3F267"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_D1A0EB73C7A1232362FCCF88EFB17ABF"
+                    "_EB3BFDDB852299D00E58665FDBB3F267"
                     {
                     "Name" = "8:NLog.dll"
                     "Attributes" = "3:512"
@@ -597,40 +625,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F45491BE75E14D08A76A97AAB70D7426"
-            {
-            "SourcePath" = "8:C:\\Backup\\Tranact\\New TUD Work\\Dragon Device Drivers\\Drivers\\Wacom\\Wacom_Install_Files\\ScrapDragon.Signature.Wacom.exe.config"
-            "TargetName" = "8:ScrapDragon.Signature.Wacom.exe.config"
-            "Tag" = "8:"
-            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FB09FC1DA777450BAC8DAF4042948D53"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F32FD3A1CD37CCE4073BE27090F9F97D"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SecuGen.FDxSDKPro.Windows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4c4e1bcde5201535, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_FB09FC1DA777450BAC8DAF4042948D53"
+                    "_F32FD3A1CD37CCE4073BE27090F9F97D"
                     {
-                    "Name" = "8:SecuGen.FDxSDKPro.Windows.dll"
+                    "Name" = "8:Newtonsoft.Json.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:C:\\Backup\\Tranact\\New TUD Work\\Dragon Device Drivers\\Drivers\\secugen\\HamsterFingerprintReader - 5.20.2020\\SecuGen.FDxSDKPro.Windows.dll"
+            "SourcePath" = "8:Newtonsoft.Json.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
@@ -645,7 +653,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
         }

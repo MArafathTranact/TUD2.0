@@ -14,3 +14,18 @@ C:\Projects\Testing Application\TUD2.0\TUD2.0\obj\Release\TUD2.0.csproj.CoreComp
 C:\Projects\Testing Application\TUD2.0\TUD2.0\obj\Release\TUD2.0.csproj.CopyComplete
 C:\Projects\Testing Application\TUD2.0\TUD2.0\obj\Release\TUD2.0.exe
 C:\Projects\Testing Application\TUD2.0\TUD2.0\obj\Release\TUD2.0.pdb
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\bin\Release\NLog.config
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\bin\Release\TUD2.0.exe.config
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\bin\Release\TUD2.0.exe
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\bin\Release\TUD2.0.pdb
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\bin\Release\Newtonsoft.Json.dll
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\bin\Release\NLog.dll
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\bin\Release\Newtonsoft.Json.xml
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\bin\Release\NLog.xml
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\obj\Release\TUD2.0.csproj.SuggestedBindingRedirects.cache
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\obj\Release\TUD2._0.ProjectInstaller.resources
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\obj\Release\TUD2.0.csproj.GenerateResource.cache
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\obj\Release\TUD2.0.csproj.CoreCompileInputs.cache
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\obj\Release\TUD2.0.csproj.CopyComplete
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\obj\Release\TUD2.0.exe
+C:\Users\araaf\source\repos\JPEGgerTUD2.0\TUD2.0\TUD2.0\obj\Release\TUD2.0.pdb
