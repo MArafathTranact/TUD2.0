@@ -227,7 +227,6 @@ namespace TUD2._0
                                             default:
                                                 LogEvents($" Work Station '{WorkStationName}' : Ping received {JsonConvert.SerializeObject(socket)}");
                                                 webSocketCommandProcessed = false;
-                                                await webSocketCommandHandler.HandleCommand("tots").ConfigureAwait(false);
                                                 break;
                                         }
                                     }

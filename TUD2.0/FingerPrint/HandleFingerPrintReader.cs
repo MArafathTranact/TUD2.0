@@ -21,17 +21,24 @@ namespace TUD2._0.FingerPrint
         [DllImport("kernel32.dll")]
         static extern uint WTSGetActiveConsoleSessionId();
 
+        PostImageToJpegger postImage;
+
+        public HandleFingerPrintReader()
+        {
+            postImage = new PostImageToJpegger();
+        }
         public void ProcessCommandHandle(Camera camera)
         {
 
             try
             {
-                var executablePath = @"C:\Program Files (x86)\Transact Universal Driver\HamsterFingerprintReader.exe"; //GetAppSettingValue("ExecutablePath");
+                var path = ServiceConfiguration.GetFileLocation("ExecutablePath");
+                var executablePath = path + @"\HamsterFingerprintReader.exe"; //GetAppSettingValue("ExecutablePath");
 
                 //string startupPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, "HamsterFingerprintReader.exe");
 
-                var commandStringImage = @"C:\Program Files (x86)\Transact Payment Systems,Inc\TUD2.0Installer\FingerprintScanLog.jpg";//$"{Path.GetTempPath()}FingerprintScanLog.jpg";
-                var commandStringLog = @"C:\Program Files (x86)\Transact Payment Systems,Inc\TUD2.0Installer\FingerprintScanLog.txt";// $"{Path.GetTempPath()}FingerprintScanLog.txt";
+                var commandStringImage = path + @"\FingerprintScanLog.jpg";//$"{Path.GetTempPath()}FingerprintScanLog.jpg";
+                var commandStringLog = path + @"\FingerprintScanLog.txt";// $"{Path.GetTempPath()}FingerprintScanLog.txt";
 
 
 
@@ -40,7 +47,7 @@ namespace TUD2._0.FingerPrint
                 ApplicationLoader.PROCESS_INFORMATION procInfo;
                 ApplicationLoader.StartProcessAndBypassUAC(executablePath, commandString, out procInfo);
 
-                uint winlogonPid = 0;
+                //uint winlogonPid = 0;
                 // obtain the currently active session id; every logged on user in the system has a unique session id
                 uint dwSessionId = WTSGetActiveConsoleSessionId();
 
@@ -53,13 +60,10 @@ namespace TUD2._0.FingerPrint
                         appdone = false;
                     else
                         appdone = true;
-                    Thread.Sleep(100);
-                    //foreach (Process p in processes)
-                    //{
-                    //    appdone = false;
-                    //}
-
+                    Thread.Sleep(1000);
                 }
+                Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(commandStringLog, commandStringImage, camera.camera_name, "FINGERPRINT CAPTURE", "Finger Print "); });
+
 
             }
             catch (Exception ex)

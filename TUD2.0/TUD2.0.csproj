@@ -61,6 +61,8 @@
     <Compile Include="Classes\CapturedImageResponse.cs" />
     <Compile Include="Classes\JpeggerCameraCaptureRequest.cs" />
     <Compile Include="Classes\Logger.cs" />
+    <Compile Include="Classes\PostImageToJpegger.cs" />
+    <Compile Include="Classes\ServiceConfiguration.cs" />
     <Compile Include="Classes\SocketMessage.cs" />
     <Compile Include="Classes\WebSocketCommandHandler.cs" />
     <Compile Include="ESeek\HandleESeekLicenseScanner.cs" />
