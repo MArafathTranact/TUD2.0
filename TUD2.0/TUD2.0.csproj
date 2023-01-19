@@ -59,11 +59,13 @@
     <Compile Include="Classes\CameraGroup.cs" />
     <Compile Include="Classes\CameraTypes.cs" />
     <Compile Include="Classes\CapturedImageResponse.cs" />
+    <Compile Include="Classes\Contracts.cs" />
     <Compile Include="Classes\JpeggerCameraCaptureRequest.cs" />
     <Compile Include="Classes\Logger.cs" />
     <Compile Include="Classes\PostImageToJpegger.cs" />
     <Compile Include="Classes\ServiceConfiguration.cs" />
     <Compile Include="Classes\SocketMessage.cs" />
+    <Compile Include="Classes\TudCommand.cs" />
     <Compile Include="Classes\WebSocketCommandHandler.cs" />
     <Compile Include="ESeek\HandleESeekLicenseScanner.cs" />
     <Compile Include="FingerPrint\HandleFingerPrintReader.cs" />
@@ -89,6 +91,9 @@
     <Compile Include="WebSocketListener.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="TwainKodak\PdfSharp.dll" />
+    <Content Include="TwainKodak\PdfSharp.xml" />
+    <Content Include="TwainKodak\TwainKodak.exe" />
     <Content Include="Waycom\Interop.wgssSTU.dll" />
     <Content Include="Waycom\ScrapDragon.Signature.Wacom.exe" />
     <None Include="App.config" />
@@ -102,6 +107,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
+    <None Include="TwainKodak\TwainKodak.exe.config" />
     <None Include="Waycom\ScrapDragon.Signature.Wacom.exe.config" />
   </ItemGroup>
   <ItemGroup>

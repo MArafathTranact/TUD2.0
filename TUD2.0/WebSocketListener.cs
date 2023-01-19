@@ -42,6 +42,7 @@ namespace TUD2._0
         private static List<Camera> Cameras = new List<Camera>();
         private static List<CameraGroup> CameraGroups = new List<CameraGroup>();
         private static List<CameraTypes> CameraTypes = new List<CameraTypes>();
+        private static List<Contracts> CameraContracts = new List<Contracts>();
         private System.Timers.Timer refreshcameras = new System.Timers.Timer(1000 * 60 * 2);
 
         #endregion
@@ -179,66 +180,87 @@ namespace TUD2._0
                             else if (socket != null && !string.IsNullOrEmpty(socket.message.command))
                             {
 
-                                var camera = Cameras.Where(x => x.camera_name == socket.message.command.Trim()).FirstOrDefault();
-
-                                if (camera != null)
+                                var command = JsonConvert.DeserializeObject<TudCommand>(socket.message.command);
+                                if (command != null && !string.IsNullOrWhiteSpace(command.camera_name))
                                 {
-                                    var cameraType = CameraTypes.Where(x => x.ID == camera.camera_type).FirstOrDefault();
-                                    if (cameraType != null)
+                                    var camera = Cameras.Where(x => x.camera_name == command.camera_name.Trim()).FirstOrDefault();
+
+                                    if (camera != null)
                                     {
-                                        switch (cameraType.Description)
+                                        var cameraType = CameraTypes.Where(x => x.ID == camera.camera_type).FirstOrDefault();
+                                        if (cameraType != null)
                                         {
-                                            case "Hamster Finger Print Reader":
-                                                LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Hamster Fingerprint Reader ");
-                                                webSocketCommandProcessed = false;
-                                                webSocketCommandHandler = new WebSocketCommandHandler(new HandleFingerPrintReader());
-                                                webSocketCommandHandler.ProcessCommandHandle(camera);
-                                                break;
-                                            case "Waycom Signature Pad":
-                                                LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Waycam Signature Pad ");
-                                                webSocketCommandProcessed = false;
-                                                webSocketCommandHandler = new WebSocketCommandHandler(new HandleWaycomSignaturePad());
-                                                webSocketCommandHandler.ProcessCommandHandle(camera);
-                                                break;
-                                            case "Topaz Signature Pad":
-                                                LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Topaz Signature Pad ");
-                                                webSocketCommandProcessed = false;
-                                                webSocketCommandHandler = new WebSocketCommandHandler(new HandleTopazSignaturePad());
-                                                webSocketCommandHandler.ProcessCommandHandle(camera);
-                                                break;
-                                            case "Twain Kodak Doc Scanner":
-                                                LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Twain Kodak Doc Scanner ");
-                                                webSocketCommandProcessed = false;
-                                                webSocketCommandHandler = new WebSocketCommandHandler(new HandleESeekLicenseScanner());
-                                                webSocketCommandHandler.ProcessCommandHandle(camera);
-                                                break;
-                                            case "ESeek License Scanner":
-                                                LogEvents($" Work Station '{WorkStationName}' : Command received to trigger ESeek License Scanner ");
-                                                webSocketCommandProcessed = false;
-                                                webSocketCommandHandler = new WebSocketCommandHandler(new HandleGemaltoLicenseScanner());
-                                                webSocketCommandHandler.ProcessCommandHandle(camera);
-                                                break;
-                                            case "Gemalto License Scanner":
-                                                LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Gemalto License Scanner ");
-                                                webSocketCommandProcessed = false;
-                                                webSocketCommandHandler = new WebSocketCommandHandler(new HandleTwainKodakScanner());
-                                                webSocketCommandHandler.ProcessCommandHandle(camera);
-                                                break;
-                                            default:
-                                                LogEvents($" Work Station '{WorkStationName}' : Ping received {JsonConvert.SerializeObject(socket)}");
-                                                webSocketCommandProcessed = false;
-                                                break;
+                                            switch (cameraType.Description)
+                                            {
+                                                case "Hamster Finger Print Reader":
+                                                    LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Hamster Fingerprint Reader ");
+                                                    webSocketCommandProcessed = false;
+                                                    webSocketCommandHandler = new WebSocketCommandHandler(new HandleFingerPrintReader());
+                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command);
+                                                    break;
+                                                case "Waycom Signature Pad":
+                                                    LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Wacom Signature Pad ");
+                                                    webSocketCommandProcessed = false;
+
+                                                    if (camera.contract_id != null && CameraContracts != null && CameraContracts.Any())
+                                                    {
+                                                        var contract = CameraContracts.Where(x => x.contract_id == camera.contract_id.ToString()).FirstOrDefault();
+
+                                                        if (contract != null)
+                                                            camera.contract_text = contract.text1;
+                                                        else
+                                                        {
+                                                            Logger.LogWithNoLock($" No contract found for Camera '{camera.camera_name}' with Contract Id {camera.contract_id}.");
+                                                        }
+                                                    }
+                                                    webSocketCommandHandler = new WebSocketCommandHandler(new HandleWaycomSignaturePad());
+                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command);
+                                                    break;
+                                                case "Topaz Signature Pad":
+                                                    LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Topaz Signature Pad ");
+                                                    webSocketCommandProcessed = false;
+                                                    webSocketCommandHandler = new WebSocketCommandHandler(new HandleTopazSignaturePad());
+                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command);
+                                                    break;
+                                                case "Twain Kodak Doc Scanner":
+                                                    LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Twain Kodak Doc Scanner ");
+                                                    webSocketCommandProcessed = false;
+                                                    webSocketCommandHandler = new WebSocketCommandHandler(new HandleTwainKodakScanner());
+                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command);
+                                                    break;
+                                                case "ESeek License Scanner":
+                                                    LogEvents($" Work Station '{WorkStationName}' : Command received to trigger ESeek License Scanner ");
+                                                    webSocketCommandProcessed = false;
+                                                    webSocketCommandHandler = new WebSocketCommandHandler(new HandleESeekLicenseScanner());
+                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command);
+
+                                                    break;
+                                                case "Gemalto License Scanner":
+                                                    LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Gemalto License Scanner ");
+                                                    webSocketCommandProcessed = false;
+                                                    webSocketCommandHandler = new WebSocketCommandHandler(new HandleGemaltoLicenseScanner());
+                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command);
+                                                    break;
+                                                default:
+                                                    LogEvents($" Work Station '{WorkStationName}' : Ping received {JsonConvert.SerializeObject(socket)}");
+                                                    webSocketCommandProcessed = false;
+                                                    break;
+                                            }
                                         }
+                                        else
+                                        {
+                                            LogEvents($" Work Station '{WorkStationName}' : Invalid Camera Type to trigger.");
+                                        }
+
                                     }
                                     else
                                     {
-                                        LogEvents($" Work Station '{WorkStationName}' : Invalid Camera Type to trigger.");
+                                        LogEvents($" Work Station '{WorkStationName}' : No valid camera available.");
                                     }
-
                                 }
                                 else
                                 {
-                                    LogEvents($" Work Station '{WorkStationName}' : No valid camera available.");
+                                    LogEvents($" Work Station '{WorkStationName}' : No camera parameter provided in command request.");
                                 }
 
                             }
@@ -309,6 +331,23 @@ namespace TUD2._0
 
             var camTypesCount = CameraTypes == null ? 0 : CameraTypes.Count;
             LogEvents($" Loaded {camTypesCount} Camera Types.");
+
+            CameraContracts = await GetContracts();
+            var cameraContractsCount = CameraContracts == null ? 0 : CameraContracts.Count;
+            LogEvents($" Loaded {cameraContractsCount} Contracts.");
+        }
+
+        private async Task<List<Contracts>> GetContracts()
+        {
+            try
+            {
+                return await Get<List<Contracts>>($"contracts", jpeggerToken, jpeggerEndPoint);
+            }
+            catch (Exception ex)
+            {
+                Logger.LogExceptionWithNoLock($" Work Station '{WorkStationName}' : Exception at WebSocketListener.GetContracts.", ex);
+                return new List<Contracts>();
+            }
         }
 
         private async Task<List<CameraTypes>> GetCameraTypes()

@@ -15,6 +15,18 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_0B8C760035425D6C0629696D59029CE2"
+        "OwnerKey" = "8:_0C56A8B6A03D44829B99DF99C410AFD8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_0C56A8B6A03D44829B99DF99C410AFD8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_12DEF3AB56A092FEC153CA91DE99D8C3"
         "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
         "MsmSig" = "8:_UNDEFINED"
@@ -45,13 +57,37 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_4B6AC134A1AF145F537185E988751CBE"
-        "OwnerKey" = "8:_59D7430603D44256815DA9B7E340B568"
+        "MsmKey" = "8:_3DDF8A6BF481E5E715B6C39AF6BE451E"
+        "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4B5CC28334294DF58750F04FBD53A9AD"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_4E3A0B2443EAD54C550E0DFA418EB94E"
+        "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_59D7430603D44256815DA9B7E340B568"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_614656EE453BF8F52CF5F1EF1D7CABA6"
+        "OwnerKey" = "8:_59D7430603D44256815DA9B7E340B568"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7AF45654DF634D5E836C6069E92C9E83"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -63,8 +99,14 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_B6ED85F1E9F344719CA3BCF7B65087E7"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_B7E77DD2655ED93389C1CC58915DFB94"
-        "OwnerKey" = "8:_EB3BFDDB852299D00E58665FDBB3F267"
+        "OwnerKey" = "8:_4E3A0B2443EAD54C550E0DFA418EB94E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -87,18 +129,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_EB3BFDDB852299D00E58665FDBB3F267"
-        "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F32FD3A1CD37CCE4073BE27090F9F97D"
-        "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
         "MsmSig" = "8:_UNDEFINED"
@@ -106,7 +136,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BA161D49CAA643E29B47B65C7E32D4D6"
+        "OwnerKey" = "8:_0C56A8B6A03D44829B99DF99C410AFD8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0B8C760035425D6C0629696D59029CE2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_B6ED85F1E9F344719CA3BCF7B65087E7"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -118,7 +160,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1AA7549CDA6048568045FCF144ABBA89"
+        "OwnerKey" = "8:_BA161D49CAA643E29B47B65C7E32D4D6"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -130,13 +172,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4B6AC134A1AF145F537185E988751CBE"
+        "OwnerKey" = "8:_614656EE453BF8F52CF5F1EF1D7CABA6"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EB3BFDDB852299D00E58665FDBB3F267"
+        "OwnerKey" = "8:_1AA7549CDA6048568045FCF144ABBA89"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_4E3A0B2443EAD54C550E0DFA418EB94E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -148,7 +196,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F32FD3A1CD37CCE4073BE27090F9F97D"
+        "OwnerKey" = "8:_3DDF8A6BF481E5E715B6C39AF6BE451E"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -286,6 +334,68 @@
         }
         "File"
         {
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0B8C760035425D6C0629696D59029CE2"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_0B8C760035425D6C0629696D59029CE2"
+                    {
+                    "Name" = "8:PdfSharp.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:PdfSharp.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0C56A8B6A03D44829B99DF99C410AFD8"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:TwainKodak, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_0C56A8B6A03D44829B99DF99C410AFD8"
+                    {
+                    "Name" = "8:TwainKodak.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\TwainKodak\\TwainKodak.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_12DEF3AB56A092FEC153CA91DE99D8C3"
             {
             "AssemblyRegister" = "3:1"
@@ -399,20 +509,71 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4B6AC134A1AF145F537185E988751CBE"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3DDF8A6BF481E5E715B6C39AF6BE451E"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:SecuGen.FDxSDKPro.Windows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4c4e1bcde5201535, processorArchitecture=x86"
+            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_4B6AC134A1AF145F537185E988751CBE"
+                    "_3DDF8A6BF481E5E715B6C39AF6BE451E"
                     {
-                    "Name" = "8:SecuGen.FDxSDKPro.Windows.dll"
+                    "Name" = "8:Newtonsoft.Json.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:SecuGen.FDxSDKPro.Windows.dll"
+            "SourcePath" = "8:Newtonsoft.Json.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4B5CC28334294DF58750F04FBD53A9AD"
+            {
+            "SourcePath" = "8:..\\TUD2.0\\TwainKodak\\TwainKodak.exe.config"
+            "TargetName" = "8:TwainKodak.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4E3A0B2443EAD54C550E0DFA418EB94E"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_4E3A0B2443EAD54C550E0DFA418EB94E"
+                    {
+                    "Name" = "8:NLog.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:NLog.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
@@ -461,10 +622,92 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_614656EE453BF8F52CF5F1EF1D7CABA6"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:SecuGen.FDxSDKPro.Windows, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4c4e1bcde5201535, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_614656EE453BF8F52CF5F1EF1D7CABA6"
+                    {
+                    "Name" = "8:SecuGen.FDxSDKPro.Windows.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:SecuGen.FDxSDKPro.Windows.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7AF45654DF634D5E836C6069E92C9E83"
+            {
+            "SourcePath" = "8:..\\TUD2.0\\TwainKodak\\PdfSharp.xml"
+            "TargetName" = "8:PdfSharp.xml"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9427E41D67604033B32D66FFB22CB1D2"
             {
             "SourcePath" = "8:..\\TUD2.0\\FingerPrint\\HamsterFingerprintReader.exe.config"
             "TargetName" = "8:HamsterFingerprintReader.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B6ED85F1E9F344719CA3BCF7B65087E7"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_B6ED85F1E9F344719CA3BCF7B65087E7"
+                    {
+                    "Name" = "8:PdfSharp.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\TwainKodak\\PdfSharp.dll"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
             "Condition" = "8:"
@@ -594,68 +837,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_EB3BFDDB852299D00E58665FDBB3F267"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_EB3BFDDB852299D00E58665FDBB3F267"
-                    {
-                    "Name" = "8:NLog.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:NLog.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F32FD3A1CD37CCE4073BE27090F9F97D"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_F32FD3A1CD37CCE4073BE27090F9F97D"
-                    {
-                    "Name" = "8:Newtonsoft.Json.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Newtonsoft.Json.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
         }
         "FileType"
         {
@@ -713,7 +894,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:TUD2.0Installer"
         "ProductCode" = "8:{52667001-952F-475A-97A2-F303B57AB161}"
-        "PackageCode" = "8:{FCEC623E-F8EB-4AC5-89AB-7EEF274A76BE}"
+        "PackageCode" = "8:{826F5C51-9D0F-455F-94AD-88B8539FDF49}"
         "UpgradeCode" = "8:{2D5284D1-0072-43A7-8C78-AEB950F29B77}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
