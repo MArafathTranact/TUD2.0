@@ -17,42 +17,64 @@ namespace TUD2._0.Classes
     {
         private static readonly Encoding encoding = Encoding.UTF8;
 
-        public async Task<bool> LoadImageToJpegger(string commandStringLog, string commandStringImage, string cameraName, string eventCode, string message)
+        public async Task<bool> LoadImageToJpegger(string commandStringLog, string commandStringImage, string message, TudCommand command)
         {
             try
             {
-                using (var stream = new StreamReader(commandStringLog))
+                if (!File.Exists(commandStringLog))
                 {
-                    var logString = stream.ReadLine();
-
-                    if (logString != null)
-                    {
-                        if (logString.Contains("SUCCESS"))
-                        {
-                            Logger.LogWithNoLock($" {message} is Successfully captured for camera '{cameraName}'");
-                            using (MemoryStream mstream = new MemoryStream(File.ReadAllBytes(commandStringImage)))
-                            {
-                                var request = new JpeggerCameraCaptureRequest() { EventCode = eventCode, CameraName = cameraName, SpecifyJpeggerTable = "Images" };
-                                var result = await PostJpeggerImage(mstream, cameraName, request);
-
-                                if (result)
-                                    return true;
-                                else
-                                    return false;
-                            }
-
-                        }
-                        else if (logString.Contains("CANCEL"))
-                        {
-                            Logger.LogWarningWithNoLock($" {message} is Cancelled for camera '{cameraName}'");
-                        }
-                        else if (logString.Contains("SKIP"))
-                        {
-                            Logger.LogWarningWithNoLock($" {message} is Skipped for camera '{cameraName}'");
-                        }
-                    }
-
+                    Logger.LogWarningWithNoLock($" No Log file available in {commandStringLog}");
                 }
+                else
+                {
+                    using (var stream = new StreamReader(commandStringLog))
+                    {
+                        var logString = stream.ReadLine();
+
+                        if (logString != null)
+                        {
+                            if (logString.Contains("SUCCESS"))
+                            {
+                                Logger.LogWithNoLock($" {message} is Successfully captured for camera '{command.camera_name}'");
+
+                                if (!File.Exists(commandStringImage))
+                                {
+                                    Logger.LogWarningWithNoLock($" No file to upload in Jpegger under {commandStringImage}");
+                                }
+                                else
+                                {
+                                    using (MemoryStream mstream = new MemoryStream(File.ReadAllBytes(commandStringImage)))
+                                    {
+                                        var request = new JpeggerCameraCaptureRequest() { EventCode = command.event_code, CameraName = command.camera_name, SpecifyJpeggerTable = "Images" };
+                                        var result = await PostJpeggerImage(mstream, command, request);
+
+                                        if (result)
+                                        {
+                                            return true;
+                                        }
+                                        else
+                                        {
+                                            return false;
+                                        }
+                                    }
+                                }
+
+
+                            }
+                            else if (logString.Contains("CANCEL"))
+                            {
+                                Logger.LogWarningWithNoLock($" {message} is Cancelled for camera '{command.camera_name}'");
+                            }
+                            else if (logString.Contains("SKIP"))
+                            {
+                                Logger.LogWarningWithNoLock($" {message} is Skipped for camera '{command.camera_name}'");
+                            }
+                        }
+
+                    }
+                }
+
+
             }
             catch (Exception ex)
             {
@@ -64,25 +86,25 @@ namespace TUD2._0.Classes
         }
 
 
-        private async Task<bool> PostJpeggerImage(MemoryStream img, string cameraName, JpeggerCameraCaptureRequest request, string cameraGroupName = null)
+        private async Task<bool> PostJpeggerImage(MemoryStream img, TudCommand command, JpeggerCameraCaptureRequest request, string cameraGroupName = null)
         {
             try
             {
-                var formData = GenerateMultipartFormData(img, cameraName, request.EventCode, cameraGroupName);
+                var formData = GenerateMultipartFormData(img, command, cameraGroupName);
 
                 if (formData != null)
-                    return await PostMultiForm(formData, cameraName, request);
+                    return await PostMultiForm(formData, command.camera_name, request);
                 else
                     return false;
             }
             catch (Exception ex)
             {
-                // Logger.LogExceptionWithNoLock($" Dev {ndcClient.Deviceid} : Exception at NDCProcessBarcode.PostJpeggerImage.", ex);
+                Logger.LogExceptionWithNoLock($" Exception for Camera '{command.camera_name}' at PostImageToJpegger.PostJpeggerImage.", ex);
                 return false;
             }
         }
 
-        private MultipartFormDataContent GenerateMultipartFormData(MemoryStream image, string cameraName, string eventCode, string cameraGroupName = null)
+        private MultipartFormDataContent GenerateMultipartFormData(MemoryStream image, TudCommand command, string cameraGroupName = null)
         {
             try
             {
@@ -94,15 +116,45 @@ namespace TUD2._0.Classes
                 if (!string.IsNullOrWhiteSpace(cameraGroupName))
                     multipartFormContent.Add(new StringContent(cameraGroupName), "\"" + $"image[camera_group]" + "\"");
 
-                multipartFormContent.Add(new StringContent(cameraName), "\"" + $"image[camera_name]" + "\"");
+                if (!string.IsNullOrWhiteSpace(command.camera_name))
+                    multipartFormContent.Add(new StringContent(command.camera_name), "\"" + $"image[camera_name]" + "\"");
                 //multipartFormContent.Add(new StringContent(ndcClient.authenticateBarcode.receipt_nbr), "\"" + $"image[receipt_nbr]" + "\"");
-                multipartFormContent.Add(new StringContent(eventCode), "\"" + $"image[event_code]" + "\"");
+                if (!string.IsNullOrWhiteSpace(command.event_code))
+                    multipartFormContent.Add(new StringContent(command.event_code), "\"" + $"image[event_code]" + "\"");
+
+                if (!string.IsNullOrWhiteSpace(command.location))
+                    multipartFormContent.Add(new StringContent(command.location), "\"" + $"image[location]" + "\"");
+
+                if (!string.IsNullOrWhiteSpace(command.branch_code))
+                    multipartFormContent.Add(new StringContent(command.branch_code), "\"" + $"image[branch_code]" + "\"");
+
+                if (!string.IsNullOrWhiteSpace(command.ticket_nbr))
+                    multipartFormContent.Add(new StringContent(command.ticket_nbr), "\"" + $"image[ticket_nbr]" + "\"");
+
+                if (!string.IsNullOrWhiteSpace(command.receipt_nbr))
+                    multipartFormContent.Add(new StringContent(command.receipt_nbr), "\"" + $"image[receipt_nbr]" + "\"");
+
+                if (!string.IsNullOrWhiteSpace(command.tare_seq_nbr.ToString()))
+                    multipartFormContent.Add(new StringContent(command.tare_seq_nbr.ToString()), "\"" + $"image[tare_seq_nbr]" + "\"");
+
+                if (!string.IsNullOrWhiteSpace(command.amount.ToString()))
+                    multipartFormContent.Add(new StringContent(command.amount.ToString()), "\"" + $"image[amount]" + "\"");
+
+                if (!string.IsNullOrWhiteSpace(command.transaction_type))
+                    multipartFormContent.Add(new StringContent(command.transaction_type), "\"" + $"image[transaction_type]" + "\"");
+
+                if (!string.IsNullOrWhiteSpace(command.amount.ToString()))
+                    multipartFormContent.Add(new StringContent(command.amount.ToString()), "\"" + $"image[amount]" + "\"");
+
+                if (!string.IsNullOrWhiteSpace(command.yardid))
+                    multipartFormContent.Add(new StringContent(command.yardid), "\"" + $"image[yardid]" + "\"");
+
 
                 return multipartFormContent;
             }
             catch (Exception ex)
             {
-                //Logger.LogExceptionWithNoLock($" Dev {ndcClient.Deviceid} : Exception at NDCProcessBarcode.GenerateMultipartFormData.", ex);
+                Logger.LogExceptionWithNoLock($" Exception for camera '{command.camera_name}' at PostImageToJpegger.GenerateMultipartFormData.", ex);
                 return null;
             }
         }
@@ -127,21 +179,27 @@ namespace TUD2._0.Classes
 
                 if (response.IsSuccessStatusCode)
                 {
+                    var result = await response.Content.ReadAsStringAsync();
+
+                    var Capture_seq_nbr = JsonConvert.DeserializeObject<CapturedImageResponse>(result).capture_seq_nbr;
+                    Logger.LogWithNoLock($" Successfully posted the image to jpegger for camera '{cameraName}' with Capture Seq number ={Capture_seq_nbr}");
 
                     status = true;
+
                     //request.SuccessPicturePost.Add(cameraName);
                 }
                 else
                 {
+                    Logger.LogWarningWithNoLock($"Failure in posting the image to jpegger for camera '{cameraName}' : {response.ReasonPhrase}");
                     status = false;
-                    var result = await response.Content.ReadAsStringAsync();
+
                     // Logger.LogWithNoLock($" Dev {ndcClient.Deviceid} : Failed Response from API at NDCProcessBarcode.PostMultiForm :{result} for Camera :{cameraName}");
                 }
                 return status;
             }
             catch (Exception ex)
             {
-                // Logger.LogExceptionWithNoLock($" Dev {ndcClient.Deviceid} : Exception at NDCProcessBarcode.PostMultiForm with Camera :{cameraName}", ex);
+                Logger.LogExceptionWithNoLock($" Exception for camera '{cameraName}' PostImageToJpegger.PostMultiForm.", ex);
                 return status;
             }
         }

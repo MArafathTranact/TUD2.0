@@ -28,9 +28,9 @@ namespace TUD2._0.Classes
             catch { }
         }
 
-        public void ProcessCommandHandle(Camera camera)
+        public void ProcessCommandHandle(Camera camera, TudCommand command)
         {
-            handleTUDCommand.ProcessCommandHandle(camera);
+            handleTUDCommand.ProcessCommandHandle(camera, command);
         }
     }
 }

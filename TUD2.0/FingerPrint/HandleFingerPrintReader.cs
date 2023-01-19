@@ -27,44 +27,51 @@ namespace TUD2._0.FingerPrint
         {
             postImage = new PostImageToJpegger();
         }
-        public void ProcessCommandHandle(Camera camera)
+        public void ProcessCommandHandle(Camera camera, TudCommand command)
         {
 
             try
             {
                 var path = ServiceConfiguration.GetFileLocation("ExecutablePath");
-                var executablePath = path + @"\HamsterFingerprintReader.exe"; //GetAppSettingValue("ExecutablePath");
+                var executablePath = path + @"HamsterFingerprintReader.exe"; //GetAppSettingValue("ExecutablePath");
 
-                //string startupPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, "HamsterFingerprintReader.exe");
-
-                var commandStringImage = path + @"\FingerprintScanLog.jpg";//$"{Path.GetTempPath()}FingerprintScanLog.jpg";
-                var commandStringLog = path + @"\FingerprintScanLog.txt";// $"{Path.GetTempPath()}FingerprintScanLog.txt";
-
-
-
-                var commandString = $"\"{commandStringImage}\" \"{commandStringLog}\"";
-
-                ApplicationLoader.PROCESS_INFORMATION procInfo;
-                ApplicationLoader.StartProcessAndBypassUAC(executablePath, commandString, out procInfo);
-
-                //uint winlogonPid = 0;
-                // obtain the currently active session id; every logged on user in the system has a unique session id
-                uint dwSessionId = WTSGetActiveConsoleSessionId();
-
-                var appdone = false;
-                while (!appdone)
+                if (!File.Exists(executablePath))
+                {
+                    Logger.LogWarningWithNoLock($" No HamsterFingerprintReader executable available for operation in {path}");
+                }
+                else
                 {
 
-                    Process[] processes = Process.GetProcessesByName("HamsterFingerprintReader");
-                    if (processes != null && processes.Any())
-                        appdone = false;
-                    else
-                        appdone = true;
-                    Thread.Sleep(1000);
+                    //string startupPath = Path.Combine(Directory.GetParent(System.IO.Directory.GetCurrentDirectory()).Parent.Parent.Parent.FullName, "HamsterFingerprintReader.exe");
+
+                    var commandStringImage = path + @"FingerprintScanLog.jpg";//$"{Path.GetTempPath()}FingerprintScanLog.jpg";
+                    var commandStringLog = path + @"FingerprintScanLog.txt";// $"{Path.GetTempPath()}FingerprintScanLog.txt";
+
+
+
+                    var commandString = $"\"{commandStringImage}\" \"{commandStringLog}\"";
+
+                    ApplicationLoader.PROCESS_INFORMATION procInfo;
+                    ApplicationLoader.StartProcessAndBypassUAC(executablePath, commandString, out procInfo);
+
+                    //uint winlogonPid = 0;
+                    // obtain the currently active session id; every logged on user in the system has a unique session id
+                    uint dwSessionId = WTSGetActiveConsoleSessionId();
+
+                    var appdone = false;
+                    while (!appdone)
+                    {
+
+                        Process[] processes = Process.GetProcessesByName("HamsterFingerprintReader");
+                        if (processes != null && processes.Any())
+                            appdone = false;
+                        else
+                            appdone = true;
+                        Thread.Sleep(1000);
+                    }
+                    Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(commandStringLog, commandStringImage, "Finger Print ", command); });
+
                 }
-                Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(commandStringLog, commandStringImage, camera.camera_name, "FINGERPRINT CAPTURE", "Finger Print "); });
-
-
             }
             catch (Exception ex)
             {
