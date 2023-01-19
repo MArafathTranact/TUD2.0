@@ -8,7 +8,9 @@ namespace TUD2._0.Classes
 {
     public class CapturedImageResponse
     {
-        public string Ticket_Nbr { get; set; } = string.Empty;
-        public string Capture_Seq_Nbr { get; set; } = string.Empty;
+        public long capture_seq_nbr { get; set; }
+        public string thumbnail_url { get; set; }
+        public string url { get; set; }
+        public string lineItemBase64Image { get; set; }
     }
 }
