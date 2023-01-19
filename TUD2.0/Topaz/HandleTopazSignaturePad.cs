@@ -10,9 +10,9 @@ namespace TUD2._0.Topaz
 {
     internal class HandleTopazSignaturePad : IHandleTUDCommand
     {
-        public void ProcessCommandHandle(Camera camera)
+        public void ProcessCommandHandle(Camera camera, TudCommand command)
         {
-            
+
         }
     }
 }
