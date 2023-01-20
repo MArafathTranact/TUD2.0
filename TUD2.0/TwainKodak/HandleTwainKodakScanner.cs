@@ -46,9 +46,8 @@ namespace TUD2._0.TwainKodak
                 else
                 {
 
-                    var twainpdfPath = string.Format("{0}",
-                                                     path.TrimEnd(new char[] { '\\' }));
-                    var commandStringLog = path + @"TwainKodakLog.txt";// $"{Path.GetTempPath()}FingerprintScanLog.txt";
+                    var twainpdfPath = path + @"TwainKodak.pdf";
+                    var commandStringLog = path + @"TwainKodakLog.txt";
 
                     var commandString = $"\"{twainpdfPath}\" \"{commandStringLog}\"";
 
@@ -71,7 +70,7 @@ namespace TUD2._0.TwainKodak
                         Thread.Sleep(1000);
                     }
 
-                    //Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(logPath, path + "sig_with_text.jpg", camera.camera_name, "SIGNATURE CAPTURE", "Waycom Signature "); });
+                    Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(commandStringLog, twainpdfPath, "Kodak Doc Scanner ", command); });
                 }
             }
             catch (Exception ex)

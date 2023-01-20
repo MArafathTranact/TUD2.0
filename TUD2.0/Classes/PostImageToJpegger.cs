@@ -50,6 +50,29 @@ namespace TUD2._0.Classes
 
                                         if (result)
                                         {
+                                            if (!string.IsNullOrEmpty(commandStringImage) && File.Exists(commandStringImage))
+                                            {
+                                                try
+                                                {
+                                                    File.Delete(commandStringImage);
+                                                }
+                                                catch (Exception ex)
+                                                {
+                                                    Logger.LogExceptionWithNoLock($" Exception at deleting the image file", ex);
+                                                }
+                                            }
+                                            if (!string.IsNullOrEmpty(commandStringLog) && File.Exists(commandStringLog))
+                                            {
+                                                try
+                                                {
+                                                    File.Delete(commandStringLog);
+                                                }
+                                                catch (Exception ex)
+                                                {
+                                                    Logger.LogExceptionWithNoLock($" Exception at deleting the log file", ex);
+                                                }
+                                            }
+
                                             return true;
                                         }
                                         else
