@@ -56,6 +56,11 @@ namespace TUD2._0.Classes
         public string IdNumber { get; set; }
         public string ContractId { get; set; }
 
+        public JpeggerCameraCaptureDataModel CaptureDataApi { get; set; }
+        public bool IsScan { get; set; }
+
+        public int JpeggerTry { get; set; }
+
         public JpeggerCameraCaptureRequest()
         {
             GuidId = null;

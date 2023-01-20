@@ -54,12 +54,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cameras\HandleCamera.cs" />
     <Compile Include="Classes\ApplicationLoader.cs" />
     <Compile Include="Classes\Camera.cs" />
     <Compile Include="Classes\CameraGroup.cs" />
     <Compile Include="Classes\CameraTypes.cs" />
     <Compile Include="Classes\CapturedImageResponse.cs" />
     <Compile Include="Classes\Contracts.cs" />
+    <Compile Include="Classes\JpeggerCameraCaptureDataModel.cs" />
     <Compile Include="Classes\JpeggerCameraCaptureRequest.cs" />
     <Compile Include="Classes\Logger.cs" />
     <Compile Include="Classes\PostImageToJpegger.cs" />

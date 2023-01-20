@@ -18,6 +18,7 @@ using TUD2._0.Topaz;
 using TUD2._0.ESeek;
 using TUD2._0.Gemalto;
 using TUD2._0.TwainKodak;
+using TUD2._0.Cameras;
 
 namespace TUD2._0
 {
@@ -242,8 +243,21 @@ namespace TUD2._0
                                                     webSocketCommandHandler.ProcessCommandHandle(camera, command);
                                                     break;
                                                 default:
-                                                    LogEvents($" Work Station '{WorkStationName}' : Ping received {JsonConvert.SerializeObject(socket)}");
-                                                    webSocketCommandProcessed = false;
+
+                                                    if (camera.IsNetCam == 1)
+                                                    {
+                                                        LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Cameras ");
+                                                        webSocketCommandProcessed = false;
+                                                        webSocketCommandHandler = new WebSocketCommandHandler(new HandleCamera(Cameras, CameraGroups));
+                                                        webSocketCommandHandler.ProcessCommandHandle(camera, command);
+
+                                                    }
+                                                    else
+                                                    {
+                                                        LogEvents($" Work Station '{WorkStationName}' : Ping received {JsonConvert.SerializeObject(socket)}");
+                                                        webSocketCommandProcessed = false;
+                                                    }
+
                                                     break;
                                             }
                                         }
@@ -255,7 +269,15 @@ namespace TUD2._0
                                     }
                                     else
                                     {
-                                        LogEvents($" Work Station '{WorkStationName}' : No valid camera available.");
+                                        var cameraGroup = GetCameraGroupInfo(command.camera_name.Trim());
+
+                                        if (cameraGroup?.Count > 0)
+                                        {
+                                        }
+                                        else
+                                        {
+                                            LogEvents($" Work Station '{WorkStationName}' : No valid camera available.");
+                                        }
                                     }
                                 }
                                 else
@@ -417,7 +439,7 @@ namespace TUD2._0
                 ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
                 var httpClient = new HttpClient
                 {
-                    Timeout = TimeSpan.FromSeconds(20)
+                    Timeout = TimeSpan.FromSeconds(30)
                 };
 
                 if (addToken == 1 && !string.IsNullOrWhiteSpace(token))
@@ -441,6 +463,18 @@ namespace TUD2._0
             }
         }
 
+        private static List<Camera> GetCameraGroupInfo(string cameraGroup)
+        {
+            if (CameraGroups?.Count > 0)
+            {
+                var camGroup = CameraGroups.Where(x => x.cam_group.ToLower() == cameraGroup.ToLower() && !string.IsNullOrEmpty(x.cam_name));
+                if (camGroup.Any())
+                {
+                    return Cameras.Where(x => camGroup.Any(z => x.camera_name.ToLower() == z.cam_name.ToLower())).ToList();
+                }
+            }
+            return default;
+        }
         #endregion
 
         private void LogEvents(string input)

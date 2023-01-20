@@ -21,5 +21,7 @@ namespace TUD2._0.Classes
         public string videoURL { get; set; }
         public int? contract_id { get; set; }
         public string contract_text { get; set; }
+
+        public bool isBasic { get; set; }
     }
 }
