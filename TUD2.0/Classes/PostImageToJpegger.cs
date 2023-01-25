@@ -19,6 +19,7 @@ namespace TUD2._0.Classes
 
         public async Task<bool> LoadImageToJpegger(string commandStringLog, string commandStringImage, string message, TudCommand command)
         {
+            var status = true;
             try
             {
                 if (!File.Exists(commandStringLog))
@@ -49,36 +50,10 @@ namespace TUD2._0.Classes
                                         var result = await PostJpeggerImage(mstream, command, request);
 
                                         if (result)
-                                        {
-                                            if (!string.IsNullOrEmpty(commandStringImage) && File.Exists(commandStringImage))
-                                            {
-                                                try
-                                                {
-                                                    File.Delete(commandStringImage);
-                                                }
-                                                catch (Exception ex)
-                                                {
-                                                    Logger.LogExceptionWithNoLock($" Exception at deleting the image file", ex);
-                                                }
-                                            }
-                                            if (!string.IsNullOrEmpty(commandStringLog) && File.Exists(commandStringLog))
-                                            {
-                                                try
-                                                {
-                                                    File.Delete(commandStringLog);
-                                                }
-                                                catch (Exception ex)
-                                                {
-                                                    Logger.LogExceptionWithNoLock($" Exception at deleting the log file", ex);
-                                                }
-                                            }
-
-                                            return true;
-                                        }
+                                            status = true;
                                         else
-                                        {
-                                            return false;
-                                        }
+                                            status = false;
+
                                     }
                                 }
 
@@ -97,6 +72,28 @@ namespace TUD2._0.Classes
                     }
                 }
 
+                if (!string.IsNullOrEmpty(commandStringImage) && File.Exists(commandStringImage))
+                {
+                    try
+                    {
+                        File.Delete(commandStringImage);
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.LogExceptionWithNoLock($" Exception at PostImageToJpegger.LoadImageToJpegger in deleting the image file", ex);
+                    }
+                }
+                if (!string.IsNullOrEmpty(commandStringLog) && File.Exists(commandStringLog))
+                {
+                    try
+                    {
+                        File.Delete(commandStringLog);
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.LogExceptionWithNoLock($" Exception at PostImageToJpegger.LoadImageToJpegger in deleting the log file", ex);
+                    }
+                }
 
             }
             catch (Exception ex)
@@ -105,7 +102,7 @@ namespace TUD2._0.Classes
                 return false;
             }
 
-            return true;
+            return status;
         }
 
 

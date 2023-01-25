@@ -220,6 +220,19 @@ namespace TUD2._0
                                                 case "Topaz Signature Pad":
                                                     LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Topaz Signature Pad ");
                                                     webSocketCommandProcessed = false;
+
+                                                    if (camera.contract_id != null && CameraContracts != null && CameraContracts.Any())
+                                                    {
+                                                        var contract = CameraContracts.Where(x => x.contract_id == camera.contract_id.ToString()).FirstOrDefault();
+
+                                                        if (contract != null)
+                                                            camera.contract_text = contract.text1;
+                                                        else
+                                                        {
+                                                            Logger.LogWithNoLock($" No contract found for Camera '{camera.camera_name}' with Contract Id {camera.contract_id}.");
+                                                        }
+                                                    }
+
                                                     webSocketCommandHandler = new WebSocketCommandHandler(new HandleTopazSignaturePad());
                                                     webSocketCommandHandler.ProcessCommandHandle(camera, command);
                                                     break;

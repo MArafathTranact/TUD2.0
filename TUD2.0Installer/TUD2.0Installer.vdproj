@@ -27,6 +27,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_1123DD1830968B74E4C85034444F6BB0"
+        "OwnerKey" = "8:_3DAFEAC935C84044AEDE581DA7BFF5F4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_12DEF3AB56A092FEC153CA91DE99D8C3"
         "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
         "MsmSig" = "8:_UNDEFINED"
@@ -57,6 +63,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_3DAFEAC935C84044AEDE581DA7BFF5F4"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_3DDF8A6BF481E5E715B6C39AF6BE451E"
         "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
         "MsmSig" = "8:_UNDEFINED"
@@ -76,6 +88,12 @@
         "Entry"
         {
         "MsmKey" = "8:_59D7430603D44256815DA9B7E340B568"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5F19800422A047C59ACDED26FED3EBE5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -129,6 +147,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_E23EC84EABB646BEA2705A66E7E03A2B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
         "MsmSig" = "8:_UNDEFINED"
@@ -136,19 +160,19 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0C56A8B6A03D44829B99DF99C410AFD8"
+        "OwnerKey" = "8:_3DAFEAC935C84044AEDE581DA7BFF5F4"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0B8C760035425D6C0629696D59029CE2"
+        "OwnerKey" = "8:_1123DD1830968B74E4C85034444F6BB0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_B6ED85F1E9F344719CA3BCF7B65087E7"
+        "OwnerKey" = "8:_E23EC84EABB646BEA2705A66E7E03A2B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -161,6 +185,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_BA161D49CAA643E29B47B65C7E32D4D6"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_B6ED85F1E9F344719CA3BCF7B65087E7"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -179,6 +209,18 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_1AA7549CDA6048568045FCF144ABBA89"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0C56A8B6A03D44829B99DF99C410AFD8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0B8C760035425D6C0629696D59029CE2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -396,6 +438,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1123DD1830968B74E4C85034444F6BB0"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:SigPlusNET, Version=2.0.0.42, Culture=neutral, PublicKeyToken=6aef07010bb0624f, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_1123DD1830968B74E4C85034444F6BB0"
+                    {
+                    "Name" = "8:SigPlusNET.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:SigPlusNET.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_12DEF3AB56A092FEC153CA91DE99D8C3"
             {
             "AssemblyRegister" = "3:1"
@@ -509,6 +582,37 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3DAFEAC935C84044AEDE581DA7BFF5F4"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:TopazSigPad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_3DAFEAC935C84044AEDE581DA7BFF5F4"
+                    {
+                    "Name" = "8:TopazSigPad.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\Topaz\\TopazSigPad.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3DDF8A6BF481E5E715B6C39AF6BE451E"
             {
             "AssemblyRegister" = "3:1"
@@ -606,6 +710,26 @@
                 }
             "SourcePath" = "8:..\\TUD2.0\\FingerPrint\\HamsterFingerprintReader.exe"
             "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5F19800422A047C59ACDED26FED3EBE5"
+            {
+            "SourcePath" = "8:..\\TUD2.0\\Topaz\\TopazSigPad.exe.config"
+            "TargetName" = "8:TopazSigPad.exe.config"
             "Tag" = "8:"
             "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
             "Condition" = "8:"
@@ -837,6 +961,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E23EC84EABB646BEA2705A66E7E03A2B"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:SigPlusNET, Version=2.0.0.42, Culture=neutral, PublicKeyToken=6aef07010bb0624f, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_E23EC84EABB646BEA2705A66E7E03A2B"
+                    {
+                    "Name" = "8:SigPlusNET.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\Topaz\\SigPlusNET.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
         }
         "FileType"
         {
@@ -894,7 +1049,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:TUD2.0Installer"
         "ProductCode" = "8:{52667001-952F-475A-97A2-F303B57AB161}"
-        "PackageCode" = "8:{826F5C51-9D0F-455F-94AD-88B8539FDF49}"
+        "PackageCode" = "8:{7598139D-18F7-43BD-84DD-D44F2CEBE8F4}"
         "UpgradeCode" = "8:{2D5284D1-0072-43A7-8C78-AEB950F29B77}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

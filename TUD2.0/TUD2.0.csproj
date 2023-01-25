@@ -93,6 +93,8 @@
     <Compile Include="WebSocketListener.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Topaz\SigPlusNET.dll" />
+    <Content Include="Topaz\TopazSigPad.exe" />
     <Content Include="TwainKodak\PdfSharp.dll" />
     <Content Include="TwainKodak\PdfSharp.xml" />
     <Content Include="TwainKodak\TwainKodak.exe" />
@@ -109,6 +111,7 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="packages.config" />
+    <None Include="Topaz\TopazSigPad.exe.config" />
     <None Include="TwainKodak\TwainKodak.exe.config" />
     <None Include="Waycom\ScrapDragon.Signature.Wacom.exe.config" />
   </ItemGroup>
