@@ -43,8 +43,10 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Windows" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -93,6 +95,10 @@
     <Compile Include="WebSocketListener.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ESeek\CyUSB.dll" />
+    <Content Include="ESeek\ESeekScanner.exe" />
+    <Content Include="Gemalto\GemaltoScanner.exe" />
+    <Content Include="Gemalto\MMMReaderDotNet40.dll" />
     <Content Include="Topaz\SigPlusNET.dll" />
     <Content Include="Topaz\TopazSigPad.exe" />
     <Content Include="TwainKodak\PdfSharp.dll" />
@@ -106,7 +112,9 @@
     <Content Include="NLog.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="ESeek\ESeekScanner.exe.config" />
     <None Include="FingerPrint\HamsterFingerprintReader.exe.config" />
+    <None Include="Gemalto\GemaltoScanner.exe.config" />
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>

@@ -51,6 +51,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_328E29D78D774211674D9CA133F72471"
+        "OwnerKey" = "8:_4ACABCD41C83473E8F4771863208353D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_33EC1D55C51FB3D9EE262A76C0519DAF"
         "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
         "MsmSig" = "8:_UNDEFINED"
@@ -75,6 +81,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_4ACABCD41C83473E8F4771863208353D"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_4B5CC28334294DF58750F04FBD53A9AD"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -93,6 +105,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_5E91EFD025BF32270B4F2DA1DE90432C"
+        "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_5F19800422A047C59ACDED26FED3EBE5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -105,6 +123,18 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_6690B224A23140FC99FD358281A418B3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_75A15D1578EB46FD8C6A8977C4B34DB7"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_7AF45654DF634D5E836C6069E92C9E83"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -112,6 +142,18 @@
         "Entry"
         {
         "MsmKey" = "8:_9427E41D67604033B32D66FFB22CB1D2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A08AC96312CB4F918AED9F9B7377DC3B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A13B739252B043AAB75C8D3C7D4B53DA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -131,6 +173,18 @@
         {
         "MsmKey" = "8:_BA161D49CAA643E29B47B65C7E32D4D6"
         "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C5A252FBD22D45F7AA1C087DFC643BE1"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D6EC2C851CF1513D4B582418F921492A"
+        "OwnerKey" = "8:_A08AC96312CB4F918AED9F9B7377DC3B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -160,13 +214,37 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3DAFEAC935C84044AEDE581DA7BFF5F4"
+        "OwnerKey" = "8:_C5A252FBD22D45F7AA1C087DFC643BE1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1123DD1830968B74E4C85034444F6BB0"
+        "OwnerKey" = "8:_4ACABCD41C83473E8F4771863208353D"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_328E29D78D774211674D9CA133F72471"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A08AC96312CB4F918AED9F9B7377DC3B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_D6EC2C851CF1513D4B582418F921492A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A13B739252B043AAB75C8D3C7D4B53DA"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -208,6 +286,18 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3DAFEAC935C84044AEDE581DA7BFF5F4"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_1123DD1830968B74E4C85034444F6BB0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_1AA7549CDA6048568045FCF144ABBA89"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -239,6 +329,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_3DDF8A6BF481E5E715B6C39AF6BE451E"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5E91EFD025BF32270B4F2DA1DE90432C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -551,6 +647,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_328E29D78D774211674D9CA133F72471"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:MMMReaderDotNet40, Version=9.3.0.0, Culture=neutral, PublicKeyToken=628dd6318974115c, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_328E29D78D774211674D9CA133F72471"
+                    {
+                    "Name" = "8:MMMReaderDotNet40.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:MMMReaderDotNet40.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_33EC1D55C51FB3D9EE262A76C0519DAF"
             {
             "AssemblyRegister" = "3:1"
@@ -644,6 +771,37 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4ACABCD41C83473E8F4771863208353D"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:GemaltoScanner, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_4ACABCD41C83473E8F4771863208353D"
+                    {
+                    "Name" = "8:GemaltoScanner.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\Gemalto\\GemaltoScanner.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4B5CC28334294DF58750F04FBD53A9AD"
             {
             "SourcePath" = "8:..\\TUD2.0\\TwainKodak\\TwainKodak.exe.config"
@@ -726,6 +884,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_5E91EFD025BF32270B4F2DA1DE90432C"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:System.Windows, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                "ScatterAssemblies"
+                {
+                    "_5E91EFD025BF32270B4F2DA1DE90432C"
+                    {
+                    "Name" = "8:System.Windows.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:System.Windows.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5F19800422A047C59ACDED26FED3EBE5"
             {
             "SourcePath" = "8:..\\TUD2.0\\Topaz\\TopazSigPad.exe.config"
@@ -777,6 +966,46 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6690B224A23140FC99FD358281A418B3"
+            {
+            "SourcePath" = "8:..\\TUD2.0\\Gemalto\\GemaltoScanner.exe.config"
+            "TargetName" = "8:GemaltoScanner.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_75A15D1578EB46FD8C6A8977C4B34DB7"
+            {
+            "SourcePath" = "8:..\\TUD2.0\\ESeek\\ESeekScanner.exe.config"
+            "TargetName" = "8:ESeekScanner.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_7AF45654DF634D5E836C6069E92C9E83"
             {
             "SourcePath" = "8:..\\TUD2.0\\TwainKodak\\PdfSharp.xml"
@@ -801,6 +1030,68 @@
             {
             "SourcePath" = "8:..\\TUD2.0\\FingerPrint\\HamsterFingerprintReader.exe.config"
             "TargetName" = "8:HamsterFingerprintReader.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A08AC96312CB4F918AED9F9B7377DC3B"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ESeekScanner, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_A08AC96312CB4F918AED9F9B7377DC3B"
+                    {
+                    "Name" = "8:ESeekScanner.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\ESeek\\ESeekScanner.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A13B739252B043AAB75C8D3C7D4B53DA"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:CyUSB, Version=1.2.3.0, Culture=neutral, PublicKeyToken=01f1d2b6c851ae92, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_A13B739252B043AAB75C8D3C7D4B53DA"
+                    {
+                    "Name" = "8:CyUSB.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\ESeek\\CyUSB.dll"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
             "Condition" = "8:"
@@ -908,6 +1199,68 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_C5A252FBD22D45F7AA1C087DFC643BE1"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:MMMReaderDotNet40, Version=9.3.0.0, Culture=neutral, PublicKeyToken=628dd6318974115c, processorArchitecture=x86"
+                "ScatterAssemblies"
+                {
+                    "_C5A252FBD22D45F7AA1C087DFC643BE1"
+                    {
+                    "Name" = "8:MMMReaderDotNet40.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\Gemalto\\MMMReaderDotNet40.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D6EC2C851CF1513D4B582418F921492A"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:CyUSB, Version=1.2.3.0, Culture=neutral, PublicKeyToken=01f1d2b6c851ae92, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_D6EC2C851CF1513D4B582418F921492A"
+                    {
+                    "Name" = "8:CyUSB.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:CyUSB.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DAC778496ADB4E78B0CCA06C99CCCEC2"
@@ -1049,7 +1402,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:TUD2.0Installer"
         "ProductCode" = "8:{52667001-952F-475A-97A2-F303B57AB161}"
-        "PackageCode" = "8:{7598139D-18F7-43BD-84DD-D44F2CEBE8F4}"
+        "PackageCode" = "8:{269CE900-E943-406F-8E69-126D90E62C57}"
         "UpgradeCode" = "8:{2D5284D1-0072-43A7-8C78-AEB950F29B77}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
