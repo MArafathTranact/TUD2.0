@@ -27,10 +27,10 @@ namespace TUD2._0
 
         #region Properties
 
-        private readonly string workStationWebSocket = @"ws://devjpegger.tranact.com/cable";
-        private readonly string jpeggerEndPoint = @"https://devjpegger.tranact.com/api/v1/";
-        private readonly string jpeggerToken = "";
-        private readonly int addToken = 0;
+        private readonly string workStationWebSocket = ServiceConfiguration.GetFileLocation("WorkStationWebSocket");//@"ws://devjpegger.tranact.com/cable";
+        private readonly string jpeggerEndPoint = ServiceConfiguration.GetFileLocation("JPEGgerAPI"); //@"https://devjpegger.tranact.com/api/v1/";
+        private readonly string jpeggerToken = ServiceConfiguration.GetFileLocation("JPEGgerToken");
+        private readonly int addToken = int.Parse(ServiceConfiguration.GetFileLocation("IncludeToken"));
 
         private bool ValidtWebSockettry = true;
         private string WorkStationIp = "192.168.111.2";
@@ -286,6 +286,10 @@ namespace TUD2._0
 
                                         if (cameraGroup?.Count > 0)
                                         {
+                                            LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Camera group ");
+                                            webSocketCommandProcessed = false;
+                                            webSocketCommandHandler = new WebSocketCommandHandler(new HandleCamera(Cameras, CameraGroups));
+                                            webSocketCommandHandler.ProcessCommandHandle(camera, command);
                                         }
                                         else
                                         {

@@ -30,9 +30,6 @@ namespace TUD2._0.ESeek
         {
             try
             {
-
-
-
                 var path = ServiceConfiguration.GetFileLocation("ExecutablePath");
                 var executablePath = string.Format("{0}{1}",
                                             path,
@@ -69,7 +66,7 @@ namespace TUD2._0.ESeek
                         Thread.Sleep(1000);
                     }
 
-                    Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(commandStringLog, eSeekDocPath , "Kodak Doc Scanner ", command); });
+                    Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(commandStringLog, eSeekDocPath, "Kodak Doc Scanner ", command); });
                 }
             }
             catch (Exception ex)

@@ -43,7 +43,7 @@ namespace TUD2._0.Classes
         public int ReferenceType { get; set; }
         public string GuidId { get; set; }
         public bool? SingleFileDelete { get; set; }
-        public Guid YardId { get; set; }
+        public string YardId { get; set; }
         public string LiveCaptureCamera { get; set; }
         public string TableName { get; set; }
         public string BranchCode { get; set; }
@@ -63,7 +63,6 @@ namespace TUD2._0.Classes
 
         public JpeggerCameraCaptureRequest()
         {
-            GuidId = null;
             IpAddress = string.Empty;
             IpPort = 0;
             TicketNumber = "-1";
