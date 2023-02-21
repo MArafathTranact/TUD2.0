@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GemaltoScanner", "..\..\..\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ESeekScanner", "..\..\Testing Application\ESeekScanner\ESeekScanner\ESeekScanner.csproj", "{EB3627FF-D80A-495F-8208-45ECA4CD98FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopazSigPad", "..\Topaz\TopazSigPad\TopazSigPad\TopazSigPad\TopazSigPad.csproj", "{7541E467-0133-40F4-855F-E394AA72DD6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{EB3627FF-D80A-495F-8208-45ECA4CD98FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB3627FF-D80A-495F-8208-45ECA4CD98FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB3627FF-D80A-495F-8208-45ECA4CD98FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7541E467-0133-40F4-855F-E394AA72DD6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7541E467-0133-40F4-855F-E394AA72DD6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7541E467-0133-40F4-855F-E394AA72DD6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7541E467-0133-40F4-855F-E394AA72DD6A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
