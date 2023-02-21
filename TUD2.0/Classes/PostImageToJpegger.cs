@@ -17,18 +17,18 @@ namespace TUD2._0.Classes
     {
         private static readonly Encoding encoding = Encoding.UTF8;
 
-        public async Task<bool> LoadImageToJpegger(string commandStringLog, string commandStringImage, string message, TudCommand command)
+        public async Task<bool> LoadImageToJpegger(string logPath, string imagePath, string message, TudCommand command, string image2Path = null)
         {
             var status = true;
             try
             {
-                if (!File.Exists(commandStringLog))
+                if (!File.Exists(logPath))
                 {
-                    Logger.LogWarningWithNoLock($" No Log file available in {commandStringLog}");
+                    Logger.LogWarningWithNoLock($" No Log file available in {logPath}");
                 }
                 else
                 {
-                    using (var stream = new StreamReader(commandStringLog))
+                    using (var stream = new StreamReader(logPath))
                     {
                         var logString = stream.ReadLine();
 
@@ -38,24 +38,59 @@ namespace TUD2._0.Classes
                             {
                                 Logger.LogWithNoLock($" {message} is Successfully captured for camera '{command.camera_name}'");
 
-                                if (!File.Exists(commandStringImage))
+                                try
                                 {
-                                    Logger.LogWarningWithNoLock($" No file to upload in Jpegger under {commandStringImage}");
-                                }
-                                else
-                                {
-                                    using (MemoryStream mstream = new MemoryStream(File.ReadAllBytes(commandStringImage)))
+                                    if (!File.Exists(imagePath))
                                     {
-                                        var request = new JpeggerCameraCaptureRequest() { EventCode = command.event_code, CameraName = command.camera_name, SpecifyJpeggerTable = "Images" };
-                                        var result = await PostJpeggerImage(mstream, command, request);
+                                        Logger.LogWarningWithNoLock($" No file to upload in Jpegger under {imagePath}");
+                                    }
+                                    else
+                                    {
+                                        using (MemoryStream mstream = new MemoryStream(File.ReadAllBytes(imagePath)))
+                                        {
+                                            var request = new JpeggerCameraCaptureRequest() { EventCode = command.event_code, CameraName = command.camera_name, SpecifyJpeggerTable = "Images" };
+                                            var result = await PostJpeggerImage(mstream, command, request);
 
-                                        if (result)
-                                            status = true;
-                                        else
-                                            status = false;
+                                            if (result)
+                                                status = true;
+                                            else
+                                                status = false;
 
+                                        }
                                     }
                                 }
+                                catch (Exception)
+                                {
+                                }
+
+                                try
+                                {
+                                    if (!string.IsNullOrEmpty(image2Path))
+                                    {
+                                        if (!File.Exists(image2Path))
+                                        {
+                                            Logger.LogWarningWithNoLock($" No file to upload in Jpegger under {image2Path}");
+                                        }
+                                        else
+                                        {
+                                            using (MemoryStream mstream = new MemoryStream(File.ReadAllBytes(image2Path)))
+                                            {
+                                                var request = new JpeggerCameraCaptureRequest() { EventCode = command.event_code, CameraName = command.camera_name, SpecifyJpeggerTable = "Images" };
+                                                var result = await PostJpeggerImage(mstream, command, request);
+
+                                                if (result)
+                                                    status = true;
+                                                else
+                                                    status = false;
+
+                                            }
+                                        }
+                                    }
+                                }
+                                catch (Exception)
+                                {
+                                }
+
 
 
                             }
@@ -72,26 +107,38 @@ namespace TUD2._0.Classes
                     }
                 }
 
-                if (!string.IsNullOrEmpty(commandStringImage) && File.Exists(commandStringImage))
+                if (!string.IsNullOrEmpty(imagePath) && File.Exists(imagePath))
                 {
                     try
                     {
-                        File.Delete(commandStringImage);
+                        File.Delete(imagePath);
                     }
                     catch (Exception ex)
                     {
                         Logger.LogExceptionWithNoLock($" Exception at PostImageToJpegger.LoadImageToJpegger in deleting the image file", ex);
                     }
                 }
-                if (!string.IsNullOrEmpty(commandStringLog) && File.Exists(commandStringLog))
+                if (!string.IsNullOrEmpty(logPath) && File.Exists(logPath))
                 {
                     try
                     {
-                        File.Delete(commandStringLog);
+                        File.Delete(logPath);
                     }
                     catch (Exception ex)
                     {
                         Logger.LogExceptionWithNoLock($" Exception at PostImageToJpegger.LoadImageToJpegger in deleting the log file", ex);
+                    }
+                }
+
+                if (!string.IsNullOrEmpty(image2Path) && File.Exists(image2Path))
+                {
+                    try
+                    {
+                        File.Delete(image2Path);
+                    }
+                    catch (Exception ex)
+                    {
+                        Logger.LogExceptionWithNoLock($" Exception at PostImageToJpegger.LoadImageToJpegger in deleting the face image file", ex);
                     }
                 }
 

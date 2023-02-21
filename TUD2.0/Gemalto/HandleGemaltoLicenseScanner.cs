@@ -69,7 +69,11 @@ namespace TUD2._0.Gemalto
                         Thread.Sleep(1000);
                     }
 
-                    Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(commandStringLog, gemaltodocPath, "Gemalto License Scanner ", command); });
+                    var faceimagePath = string.Format("{0}{1}",
+                                           path,
+                                           @"GemaltoFaceImage.jpg");
+
+                    Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(commandStringLog, gemaltodocPath, "Gemalto License Scanner ", command, faceimagePath); });
                 }
             }
             catch (Exception ex)
