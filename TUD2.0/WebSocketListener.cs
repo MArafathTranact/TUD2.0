@@ -33,9 +33,10 @@ namespace TUD2._0
         private readonly int addToken = int.Parse(ServiceConfiguration.GetFileLocation("IncludeToken"));
 
         private bool ValidtWebSockettry = true;
-        private string WorkStationIp = "192.168.111.2";
-        private string WorkStationPort = "4444";
-        private string WorkStationName = "Arafath's Desktop";
+        private string WorkStationIp = ServiceConfiguration.GetFileLocation("WorkStationIp");
+        private string WorkStationPort = ServiceConfiguration.GetFileLocation("WorkStationPort");
+        private string WorkStationName = "Test Workstation";
+        public int WorkStationId = 0;
         WebSocketCommandHandler webSocketCommandHandler;
         public bool webSocketCommandProcessed = true;
 
@@ -44,15 +45,24 @@ namespace TUD2._0
         private static List<CameraGroup> CameraGroups = new List<CameraGroup>();
         private static List<CameraTypes> CameraTypes = new List<CameraTypes>();
         private static List<Contracts> CameraContracts = new List<Contracts>();
+        public static WorkStation TUDWorkStation = new WorkStation();
         private System.Timers.Timer refreshcameras = new System.Timers.Timer(1000 * 60 * 2);
+        private bool CallWorkStation = true;
 
         #endregion
 
         public WebSocketListener()
         {
+            //if (TUDWorkStation != null)
+            //{
             Task.Factory.StartNew(() => { LoadCameras(); });
             refreshcameras.Elapsed += new ElapsedEventHandler(RefreshCamerasEvent);
             refreshcameras.Start();
+            //}
+            //else
+            //{
+            //    Logger.LogWarningWithNoLock($" No matching Workstation is not available.");
+            //}
         }
 
         private void RefreshCamerasEvent(object source, ElapsedEventArgs e)
@@ -104,7 +114,11 @@ namespace TUD2._0
         {
             try
             {
-                await Task.Delay(10000);
+                await Task.Delay(5000);
+
+                if (TUDWorkStation == null)
+                    return;
+
                 if (string.IsNullOrEmpty(workStationWebSocket))
                 {
                     Logger.LogWarningWithNoLock($" Work Station '{WorkStationName}' : Web Socket end point is not provided.");
@@ -184,7 +198,7 @@ namespace TUD2._0
                                 var command = JsonConvert.DeserializeObject<TudCommand>(socket.message.command);
                                 if (command != null && !string.IsNullOrWhiteSpace(command.camera_name))
                                 {
-                                    var camera = Cameras.Where(x => x.camera_name == command.camera_name.Trim()).FirstOrDefault();
+                                    var camera = Cameras.Where(x => x.camera_name.ToLower() == command.camera_name.ToLower().Trim()).FirstOrDefault();
 
                                     if (camera != null)
                                     {
@@ -194,12 +208,24 @@ namespace TUD2._0
                                             switch (cameraType.Description)
                                             {
                                                 case "Hamster Finger Print Reader":
+
+                                                    if (camera.workstation_ip != WorkStationIp && camera.workstation_port != WorkStationPort && camera.IsNetCam != 0)
+                                                    {
+                                                        LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Hamster Fingerprint Reader for different workstation");
+                                                        return;
+                                                    }
                                                     LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Hamster Fingerprint Reader ");
                                                     webSocketCommandProcessed = false;
                                                     webSocketCommandHandler = new WebSocketCommandHandler(new HandleFingerPrintReader());
-                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command);
+                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command, WorkStationId);
                                                     break;
                                                 case "Waycom Signature Pad":
+                                                case "Wacom Signature Pad":
+                                                    if (camera.workstation_ip != WorkStationIp && camera.workstation_port != WorkStationPort && camera.IsNetCam != 0)
+                                                    {
+                                                        LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Wacom Signature Pad for different workstation");
+                                                        return;
+                                                    }
                                                     LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Wacom Signature Pad ");
                                                     webSocketCommandProcessed = false;
 
@@ -215,9 +241,15 @@ namespace TUD2._0
                                                         }
                                                     }
                                                     webSocketCommandHandler = new WebSocketCommandHandler(new HandleWaycomSignaturePad());
-                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command);
+                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command, WorkStationId);
                                                     break;
                                                 case "Topaz Signature Pad":
+
+                                                    if (camera.workstation_ip != WorkStationIp && camera.workstation_port != WorkStationPort && camera.IsNetCam != 0)
+                                                    {
+                                                        LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Topaz Signature Pad for different workstation");
+                                                        return;
+                                                    }
                                                     LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Topaz Signature Pad ");
                                                     webSocketCommandProcessed = false;
 
@@ -234,26 +266,42 @@ namespace TUD2._0
                                                     }
 
                                                     webSocketCommandHandler = new WebSocketCommandHandler(new HandleTopazSignaturePad());
-                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command);
+                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command, WorkStationId);
                                                     break;
                                                 case "Twain Kodak Doc Scanner":
+                                                    if (camera.workstation_ip != WorkStationIp && camera.workstation_port != WorkStationPort && camera.IsNetCam != 0)
+                                                    {
+                                                        LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Twain Kodak Doc Scanner for different workstation");
+                                                        return;
+                                                    }
                                                     LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Twain Kodak Doc Scanner ");
                                                     webSocketCommandProcessed = false;
                                                     webSocketCommandHandler = new WebSocketCommandHandler(new HandleTwainKodakScanner());
-                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command);
+                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command, WorkStationId);
                                                     break;
                                                 case "ESeek License Scanner":
+
+                                                    if (camera.workstation_ip != WorkStationIp && camera.workstation_port != WorkStationPort && camera.IsNetCam != 0)
+                                                    {
+                                                        LogEvents($" Work Station '{WorkStationName}' : Command received to trigger  ESeek License Scanner for different workstation");
+                                                        return;
+                                                    }
                                                     LogEvents($" Work Station '{WorkStationName}' : Command received to trigger ESeek License Scanner ");
                                                     webSocketCommandProcessed = false;
                                                     webSocketCommandHandler = new WebSocketCommandHandler(new HandleESeekLicenseScanner());
-                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command);
+                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command, WorkStationId);
 
                                                     break;
                                                 case "Gemalto License Scanner":
+                                                    if (camera.workstation_ip != WorkStationIp && camera.workstation_port != WorkStationPort && camera.IsNetCam != 0)
+                                                    {
+                                                        LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Gemalto License Scanner for different workstation");
+                                                        return;
+                                                    }
                                                     LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Gemalto License Scanner ");
                                                     webSocketCommandProcessed = false;
                                                     webSocketCommandHandler = new WebSocketCommandHandler(new HandleGemaltoLicenseScanner());
-                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command);
+                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command, WorkStationId);
                                                     break;
                                                 default:
 
@@ -262,7 +310,7 @@ namespace TUD2._0
                                                         LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Cameras ");
                                                         webSocketCommandProcessed = false;
                                                         webSocketCommandHandler = new WebSocketCommandHandler(new HandleCamera(Cameras, CameraGroups));
-                                                        webSocketCommandHandler.ProcessCommandHandle(camera, command);
+                                                        webSocketCommandHandler.ProcessCommandHandle(camera, command, WorkStationId);
 
                                                     }
                                                     else
@@ -270,7 +318,6 @@ namespace TUD2._0
                                                         LogEvents($" Work Station '{WorkStationName}' : Ping received {JsonConvert.SerializeObject(socket)}");
                                                         webSocketCommandProcessed = false;
                                                     }
-
                                                     break;
                                             }
                                         }
@@ -289,7 +336,7 @@ namespace TUD2._0
                                             LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Camera group ");
                                             webSocketCommandProcessed = false;
                                             webSocketCommandHandler = new WebSocketCommandHandler(new HandleCamera(Cameras, CameraGroups));
-                                            webSocketCommandHandler.ProcessCommandHandle(camera, command);
+                                            webSocketCommandHandler.ProcessCommandHandle(camera, command, WorkStationId);
                                         }
                                         else
                                         {
@@ -330,7 +377,6 @@ namespace TUD2._0
 
                 if (ws != null && ws.State == System.Net.WebSockets.WebSocketState.Open)
                 {
-                    //await ws.CloseAsync(WebSocketCloseStatus.NormalClosure, "", CancellationToken.None);
                     await ws.CloseOutputAsync(WebSocketCloseStatus.NormalClosure, "", CancellationToken.None);
                 }
                 ws.Dispose();
@@ -342,7 +388,6 @@ namespace TUD2._0
             {
                 if (ws != null)
                 {
-                    //await ws.CloseAsync(WebSocketCloseStatus.NormalClosure, "", CancellationToken.None);
                     await ws.CloseOutputAsync(WebSocketCloseStatus.NormalClosure, "", CancellationToken.None);
                     ws.Dispose();
                     ws = null;
@@ -358,6 +403,25 @@ namespace TUD2._0
 
         private async Task LoadCameras()
         {
+            if (CallWorkStation)
+            {
+                CallWorkStation = false;
+                await GetWorkstations();
+
+                Task.Delay(5000);
+
+                if (TUDWorkStation == null)
+                {
+                    Logger.LogWarningWithNoLock($" No matching Workstation is not available for IP={WorkStationIp}, Port={WorkStationPort}.");
+                    CallWorkStation = true;
+                    return;
+                }
+                else
+                {
+                    Logger.LogWithNoLock($" WorkStation IP={WorkStationIp}, Port={WorkStationPort}  matched with available list .");
+                }
+            }
+
             Cameras = await GetCameraList();
             var camCount = Cameras == null ? 0 : Cameras.Count;
             LogEvents($" Loaded {camCount} Cameras ");
@@ -389,6 +453,37 @@ namespace TUD2._0
             }
         }
 
+        private async Task GetWorkstations()
+        {
+            try
+            {
+                var workStation = await Get<List<WorkStation>>($"workstations", jpeggerToken, jpeggerEndPoint);
+                if (workStation != null)
+                {
+                    TUDWorkStation = workStation.Where(x => x.ip == WorkStationIp && x.port == WorkStationPort).FirstOrDefault();
+                    if (TUDWorkStation != null)
+                    {
+                        WorkStationName = TUDWorkStation.name;
+                        WorkStationIp = TUDWorkStation.ip;
+                        WorkStationPort = TUDWorkStation.port;
+                        WorkStationId = TUDWorkStation.id;
+
+                    }
+                    {
+                        Logger.LogWarningWithNoLock($" No matching Workstation is not available.");
+                    }
+                }
+                else
+                {
+                    Logger.LogWarningWithNoLock($" Workstation details are not available.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.LogExceptionWithNoLock($" Exception at WebSocketListener.GetWorkstations.", ex);
+            }
+        }
+
         private async Task<List<CameraTypes>> GetCameraTypes()
         {
             try
@@ -406,6 +501,10 @@ namespace TUD2._0
             try
             {
                 var camCollection = await Get<List<Camera>>($"cameras", jpeggerToken, jpeggerEndPoint);
+                if (camCollection == null)
+                    return new List<Camera>();
+
+                //var filteredCameras = camCollection.Where(x => x.workstation_ip == WorkStationIp && x.workstation_port == WorkStationPort).ToList();
                 if (camCollection != null)
                 {
                     StringBuilder sb = new StringBuilder();

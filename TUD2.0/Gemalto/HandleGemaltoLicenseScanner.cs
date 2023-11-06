@@ -21,12 +21,12 @@ namespace TUD2._0.Gemalto
         static extern uint WTSGetActiveConsoleSessionId();
 
         PostImageToJpegger postImage;
-
+        int _workStationId = 0;
         public HandleGemaltoLicenseScanner()
         {
             postImage = new PostImageToJpegger();
         }
-        public void ProcessCommandHandle(Camera camera, TudCommand command)
+        public void ProcessCommandHandle(Camera camera, TudCommand command, int workStationId)
         {
             try
             {
@@ -37,6 +37,7 @@ namespace TUD2._0.Gemalto
                 var executablePath = string.Format("{0}{1}",
                                             path,
                                             @"GemaltoScanner.exe");
+                _workStationId = workStationId;
 
                 if (!File.Exists(executablePath))
                 {
@@ -73,6 +74,8 @@ namespace TUD2._0.Gemalto
                                            path,
                                            @"GemaltoFaceImage.jpg");
 
+                    Task.Run(() => UpdateWorkStation());
+
                     Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(commandStringLog, gemaltodocPath, "Gemalto License Scanner ", command, faceimagePath); });
                 }
             }
@@ -80,6 +83,21 @@ namespace TUD2._0.Gemalto
             {
                 Logger.LogExceptionWithNoLock($" Exception at HandleGemaltoLicenseScanner.ProcessCommandHandle : ", ex);
             }
+        }
+
+        private async Task UpdateWorkStation()
+        {
+            try
+            {
+                var api = new API();
+                var updateWorkStation = new UpdateWorkStation();
+                api.PutRequest<UpdateWorkStation>(updateWorkStation, $"workstations/{_workStationId}");
+            }
+            catch (Exception ex)
+            {
+                Logger.LogExceptionWithNoLock(" Exception at HandleWaycomSignaturePad.UpdateWorkStation : ", ex);
+            }
+
         }
     }
 }

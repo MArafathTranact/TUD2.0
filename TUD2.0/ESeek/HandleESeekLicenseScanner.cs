@@ -21,12 +21,12 @@ namespace TUD2._0.ESeek
         static extern uint WTSGetActiveConsoleSessionId();
 
         PostImageToJpegger postImage;
-
+        int _workStationId = 0;
         public HandleESeekLicenseScanner()
         {
             postImage = new PostImageToJpegger();
         }
-        public void ProcessCommandHandle(Camera camera, TudCommand command)
+        public void ProcessCommandHandle(Camera camera, TudCommand command, int workStationId)
         {
             try
             {
@@ -34,6 +34,7 @@ namespace TUD2._0.ESeek
                 var executablePath = string.Format("{0}{1}",
                                             path,
                                             @"ESeekScanner.exe");
+                _workStationId = workStationId;
 
                 if (!File.Exists(executablePath))
                 {
@@ -65,14 +66,30 @@ namespace TUD2._0.ESeek
                             appdone = true;
                         Thread.Sleep(1000);
                     }
+                    Task.Run(() => UpdateWorkStation());
 
-                    Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(commandStringLog, eSeekDocPath, "Kodak Doc Scanner ", command); });
+                    Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(commandStringLog, eSeekDocPath, "ESeek Scanner ", command); });
                 }
             }
             catch (Exception ex)
             {
-                Logger.LogExceptionWithNoLock($" Exception at HandleWaycomSignaturePad.ProcessCommandHandle : ", ex);
+                Logger.LogExceptionWithNoLock($" Exception at HandleESeekLicenseScanner.ProcessCommandHandle : ", ex);
             }
+        }
+
+        private async Task UpdateWorkStation()
+        {
+            try
+            {
+                var api = new API();
+                var updateWorkStation = new UpdateWorkStation();
+                api.PutRequest<UpdateWorkStation>(updateWorkStation, $"workstations/{_workStationId}");
+            }
+            catch (Exception ex)
+            {
+                Logger.LogExceptionWithNoLock(" Exception at HandleESeekLicenseScanner.UpdateWorkStation : ", ex);
+            }
+
         }
     }
 }

@@ -22,19 +22,20 @@ namespace TUD2._0.FingerPrint
         static extern uint WTSGetActiveConsoleSessionId();
 
         PostImageToJpegger postImage;
+        int _workStationId = 0;
 
         public HandleFingerPrintReader()
         {
             postImage = new PostImageToJpegger();
         }
-        public void ProcessCommandHandle(Camera camera, TudCommand command)
+        public void ProcessCommandHandle(Camera camera, TudCommand command, int workStationId)
         {
 
             try
             {
                 var path = ServiceConfiguration.GetFileLocation("ExecutablePath");
                 var executablePath = path + @"HamsterFingerprintReader.exe"; //GetAppSettingValue("ExecutablePath");
-
+                _workStationId = workStationId;
                 if (!File.Exists(executablePath))
                 {
                     Logger.LogWarningWithNoLock($" No HamsterFingerprintReader executable available for operation in {path}");
@@ -69,6 +70,8 @@ namespace TUD2._0.FingerPrint
                             appdone = true;
                         Thread.Sleep(1000);
                     }
+
+                    Task.Run(() => UpdateWorkStation());
                     Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(commandStringLog, commandStringImage, "Finger Print ", command); });
 
                 }
@@ -78,5 +81,21 @@ namespace TUD2._0.FingerPrint
                 Logger.LogExceptionWithNoLock($" Exception at HandleFingerPrintReader.ProcessCommandHandle : ", ex);
             }
         }
+
+        private async Task UpdateWorkStation()
+        {
+            try
+            {
+                var api = new API();
+                var updateWorkStation = new UpdateWorkStation();
+                api.PutRequest<UpdateWorkStation>(updateWorkStation, $"workstations/{_workStationId}");
+            }
+            catch (Exception ex)
+            {
+                Logger.LogExceptionWithNoLock(" Exception at HandleWaycomSignaturePad.UpdateWorkStation : ", ex);
+            }
+
+        }
+
     }
 }

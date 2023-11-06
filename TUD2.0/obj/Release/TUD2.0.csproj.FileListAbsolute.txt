@@ -35,8 +35,10 @@ C:\Projects\Tranact\TUD2.0\TUD2.0\bin\Release\TUD2.0.exe
 C:\Projects\Tranact\TUD2.0\TUD2.0\bin\Release\TUD2.0.pdb
 C:\Projects\Tranact\TUD2.0\TUD2.0\bin\Release\Newtonsoft.Json.dll
 C:\Projects\Tranact\TUD2.0\TUD2.0\bin\Release\NLog.dll
+C:\Projects\Tranact\TUD2.0\TUD2.0\bin\Release\System.Net.Http.Formatting.dll
 C:\Projects\Tranact\TUD2.0\TUD2.0\bin\Release\Newtonsoft.Json.xml
 C:\Projects\Tranact\TUD2.0\TUD2.0\bin\Release\NLog.xml
+C:\Projects\Tranact\TUD2.0\TUD2.0\bin\Release\System.Net.Http.Formatting.xml
 C:\Projects\Tranact\TUD2.0\TUD2.0\obj\Release\TUD2.0.csproj.AssemblyReference.cache
 C:\Projects\Tranact\TUD2.0\TUD2.0\obj\Release\TUD2.0.csproj.SuggestedBindingRedirects.cache
 C:\Projects\Tranact\TUD2.0\TUD2.0\obj\Release\TUD2._0.ProjectInstaller.resources

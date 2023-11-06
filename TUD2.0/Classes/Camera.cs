@@ -23,5 +23,7 @@ namespace TUD2._0.Classes
         public string contract_text { get; set; }
 
         public bool isBasic { get; set; }
+        public string workstation_ip { get; set; }
+        public string workstation_port { get; set; }
     }
 }

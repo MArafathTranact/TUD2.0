@@ -22,12 +22,14 @@ namespace TUD2._0.Cameras
         private readonly string jpeggerToken = ServiceConfiguration.GetFileLocation("JPEGgerToken");
         private readonly string yardId = ServiceConfiguration.GetFileLocation("YardId");
         private readonly int addToken = int.Parse(ServiceConfiguration.GetFileLocation("IncludeToken"));
+        int _workStationId = 0;
+
         public HandleCamera(List<Camera> cameras, List<CameraGroup> cameraGroups)
         {
             CameraGroups = cameraGroups;
             Cameras = cameras;
         }
-        public void ProcessCommandHandle(Camera camera, TudCommand command)
+        public void ProcessCommandHandle(Camera camera, TudCommand command, int workStationId)
         {
             try
             {
@@ -42,6 +44,8 @@ namespace TUD2._0.Cameras
                     CommodityName = command.commodity,
                     TransactionType = command.transaction_type,
                 };
+                _workStationId = workStationId;
+                Task.Run(() => UpdateWorkStation());
                 Task.Run(() => TriggerCamera(request));
             }
             catch (Exception ex)
@@ -70,6 +74,14 @@ namespace TUD2._0.Cameras
                     {
                         await CaptureCameraImage(cameraInfo, request);
 
+                    }
+                    else if (cameraInfo != null)
+                    {
+                        Logger.LogWarningWithNoLock($" '{cameraInfo.camera_name}' No a valid camera to take picture or no url is provided ");
+                    }
+                    else
+                    {
+                        Logger.LogWarningWithNoLock($" No a valid camera in the list. ");
                     }
                 }
             }
@@ -417,6 +429,22 @@ namespace TUD2._0.Cameras
             }
             else
                 return null;
+        }
+
+
+        private async Task UpdateWorkStation()
+        {
+            try
+            {
+                var api = new API();
+                var updateWorkStation = new UpdateWorkStation();
+                api.PutRequest<UpdateWorkStation>(updateWorkStation, $"workstations/{_workStationId}");
+            }
+            catch (Exception ex)
+            {
+                Logger.LogExceptionWithNoLock(" Exception at HandleCamera.UpdateWorkStation : ", ex);
+            }
+
         }
     }
 }

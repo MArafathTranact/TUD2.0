@@ -21,13 +21,13 @@ namespace TUD2._0.Waycom
         [DllImport("kernel32.dll")]
         static extern uint WTSGetActiveConsoleSessionId();
         PostImageToJpegger postImage;
-
+        int _workStationId = 0;
         public HandleWaycomSignaturePad()
         {
             postImage = new PostImageToJpegger();
         }
 
-        public void ProcessCommandHandle(Camera camera, TudCommand command)
+        public void ProcessCommandHandle(Camera camera, TudCommand command, int workStationId)
         {
             try
             {
@@ -39,6 +39,7 @@ namespace TUD2._0.Waycom
                 var executablePath = string.Format("{0}{1}",
                                             path,
                                             @"ScrapDragon.Signature.Wacom.exe");
+                _workStationId = workStationId;
 
                 if (!File.Exists(executablePath))
                 {
@@ -83,12 +84,28 @@ namespace TUD2._0.Waycom
                         Thread.Sleep(1000);
                     }
 
+                    Task.Run(() => UpdateWorkStation());
                     Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(logPath, path + "sig_with_text.jpg", "Waycom Signature ", command); });
                 }
             }
             catch (Exception ex)
             {
                 Logger.LogExceptionWithNoLock($" Exception at HandleWaycomSignaturePad.ProcessCommandHandle : ", ex);
+            }
+
+        }
+
+        private async Task UpdateWorkStation()
+        {
+            try
+            {
+                var api = new API();
+                var updateWorkStation = new UpdateWorkStation();
+                api.PutRequest<UpdateWorkStation>(updateWorkStation, $"workstations/{_workStationId}");
+            }
+            catch (Exception ex)
+            {
+                Logger.LogExceptionWithNoLock(" Exception at HandleWaycomSignaturePad.UpdateWorkStation : ", ex);
             }
 
         }

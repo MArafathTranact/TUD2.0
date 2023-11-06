@@ -61,6 +61,9 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.9\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows" />
     <Reference Include="System.Xml.Linq" />
@@ -73,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cameras\HandleCamera.cs" />
+    <Compile Include="Classes\API.cs" />
     <Compile Include="Classes\ApplicationLoader.cs" />
     <Compile Include="Classes\Camera.cs" />
     <Compile Include="Classes\CameraGroup.cs" />
@@ -86,7 +90,9 @@
     <Compile Include="Classes\ServiceConfiguration.cs" />
     <Compile Include="Classes\SocketMessage.cs" />
     <Compile Include="Classes\TudCommand.cs" />
+    <Compile Include="Classes\UpdateWorkStation.cs" />
     <Compile Include="Classes\WebSocketCommandHandler.cs" />
+    <Compile Include="Classes\WorkStation.cs" />
     <Compile Include="ESeek\HandleESeekLicenseScanner.cs" />
     <Compile Include="FingerPrint\HandleFingerPrintReader.cs" />
     <Compile Include="Gemalto\HandleGemaltoLicenseScanner.cs" />

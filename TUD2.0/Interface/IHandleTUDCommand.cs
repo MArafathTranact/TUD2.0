@@ -9,6 +9,6 @@ namespace TUD2._0.Interface
 {
     public interface IHandleTUDCommand
     {
-        void ProcessCommandHandle(Camera camera, TudCommand command);
+        void ProcessCommandHandle(Camera camera, TudCommand command, int workStationId);
     }
 }

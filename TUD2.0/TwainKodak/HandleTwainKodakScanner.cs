@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -22,23 +23,21 @@ namespace TUD2._0.TwainKodak
         static extern uint WTSGetActiveConsoleSessionId();
         PostImageToJpegger postImage;
 
+        int _workStationId = 0;
         public HandleTwainKodakScanner()
         {
             postImage = new PostImageToJpegger();
         }
 
-        public void ProcessCommandHandle(Camera camera, TudCommand command)
+        public void ProcessCommandHandle(Camera camera, TudCommand command, int workStationId)
         {
             try
             {
-
-
-
                 var path = ServiceConfiguration.GetFileLocation("ExecutablePath");
                 var executablePath = string.Format("{0}{1}",
                                             path,
                                             @"TwainKodak.exe");
-
+                _workStationId = workStationId;
                 if (!File.Exists(executablePath))
                 {
                     Logger.LogWarningWithNoLock($" No Twain Kodak executable available for operation in {path}");
@@ -70,13 +69,32 @@ namespace TUD2._0.TwainKodak
                         Thread.Sleep(1000);
                     }
 
+                    Task.Run(() => UpdateWorkStation());
+
                     Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(commandStringLog, twainpdfPath, "Kodak Doc Scanner ", command); });
                 }
             }
             catch (Exception ex)
             {
-                Logger.LogExceptionWithNoLock($" Exception at HandleWaycomSignaturePad.ProcessCommandHandle : ", ex);
+                Logger.LogExceptionWithNoLock($" Exception at HandleTwainKodakScanner.ProcessCommandHandle : ", ex);
             }
         }
+
+        private async Task UpdateWorkStation()
+        {
+            try
+            {
+                var api = new API();
+                var updateWorkStation = new UpdateWorkStation();
+                api.PutRequest<UpdateWorkStation>(updateWorkStation, $"workstations/{_workStationId}");
+            }
+            catch (Exception ex)
+            {
+                Logger.LogExceptionWithNoLock(" Exception at HandleTwainKodakScanner.UpdateWorkStation : ", ex);
+            }
+
+        }
+
+
     }
 }

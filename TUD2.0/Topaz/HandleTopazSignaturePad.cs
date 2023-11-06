@@ -20,11 +20,12 @@ namespace TUD2._0.Topaz
         [DllImport("kernel32.dll")]
         static extern uint WTSGetActiveConsoleSessionId();
         PostImageToJpegger postImage;
+        int _workStationId = 0;
         public HandleTopazSignaturePad()
         {
             postImage = new PostImageToJpegger();
         }
-        public void ProcessCommandHandle(Camera camera, TudCommand command)
+        public void ProcessCommandHandle(Camera camera, TudCommand command, int workStationId)
         {
             try
             {
@@ -32,6 +33,7 @@ namespace TUD2._0.Topaz
                 var executablePath = string.Format("{0}{1}",
                                             path,
                                             @"TopazSigPad.exe");
+                _workStationId = workStationId;
 
                 if (!File.Exists(executablePath))
                 {
@@ -64,14 +66,30 @@ namespace TUD2._0.Topaz
                             appdone = true;
                         Thread.Sleep(1000);
                     }
+                    Task.Run(() => UpdateWorkStation());
 
                     Task.Factory.StartNew(() => { postImage.LoadImageToJpegger(commandStringLog, imagePath, "Topaz sig pad ", command); });
                 }
             }
             catch (Exception ex)
             {
-                Logger.LogExceptionWithNoLock($" Exception at HandleWaycomSignaturePad.ProcessCommandHandle : ", ex);
+                Logger.LogExceptionWithNoLock($" Exception at HandleTopazSignaturePad.ProcessCommandHandle : ", ex);
             }
+        }
+
+        private async Task UpdateWorkStation()
+        {
+            try
+            {
+                var api = new API();
+                var updateWorkStation = new UpdateWorkStation();
+                api.PutRequest<UpdateWorkStation>(updateWorkStation, $"workstations/{_workStationId}");
+            }
+            catch (Exception ex)
+            {
+                Logger.LogExceptionWithNoLock(" Exception at HandleTopazSignaturePad.UpdateWorkStation : ", ex);
+            }
+
         }
     }
 }

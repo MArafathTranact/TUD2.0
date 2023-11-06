@@ -16,19 +16,13 @@
         "Entry"
         {
         "MsmKey" = "8:_0B8C760035425D6C0629696D59029CE2"
-        "OwnerKey" = "8:_0C56A8B6A03D44829B99DF99C410AFD8"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_0C56A8B6A03D44829B99DF99C410AFD8"
-        "OwnerKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2F2A7FF5D3FC4679BF3F499251A8B90A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_1123DD1830968B74E4C85034444F6BB0"
-        "OwnerKey" = "8:_3DAFEAC935C84044AEDE581DA7BFF5F4"
+        "OwnerKey" = "8:_FA2574A382F444D88FD9AF8CADC4ADFD"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -51,8 +45,14 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_2F2A7FF5D3FC4679BF3F499251A8B90A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_328E29D78D774211674D9CA133F72471"
-        "OwnerKey" = "8:_4ACABCD41C83473E8F4771863208353D"
+        "OwnerKey" = "8:_B2FFBC8E8C77400498022DAA18F3B383"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -69,32 +69,20 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_3DAFEAC935C84044AEDE581DA7BFF5F4"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_3DDF8A6BF481E5E715B6C39AF6BE451E"
         "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_4ACABCD41C83473E8F4771863208353D"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_4B5CC28334294DF58750F04FBD53A9AD"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_4E3A0B2443EAD54C550E0DFA418EB94E"
         "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_5007D13D72B94C6A98FD315928E54816"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -111,25 +99,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_5F19800422A047C59ACDED26FED3EBE5"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_614656EE453BF8F52CF5F1EF1D7CABA6"
         "OwnerKey" = "8:_59D7430603D44256815DA9B7E340B568"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_6690B224A23140FC99FD358281A418B3"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_75A15D1578EB46FD8C6A8977C4B34DB7"
+        "MsmKey" = "8:_789AF2EB487444B29D9E05380824E9F1"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -141,19 +117,25 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_88CE62BF855F4D1594831C2787F801AF"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_9427E41D67604033B32D66FFB22CB1D2"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_A08AC96312CB4F918AED9F9B7377DC3B"
+        "MsmKey" = "8:_A13B739252B043AAB75C8D3C7D4B53DA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_A13B739252B043AAB75C8D3C7D4B53DA"
+        "MsmKey" = "8:_B2FFBC8E8C77400498022DAA18F3B383"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -183,13 +165,25 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_D52070E7FDDA4AFCB5A197641C063B9C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_D6EC2C851CF1513D4B582418F921492A"
-        "OwnerKey" = "8:_A08AC96312CB4F918AED9F9B7377DC3B"
+        "OwnerKey" = "8:_789AF2EB487444B29D9E05380824E9F1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_DAC778496ADB4E78B0CCA06C99CCCEC2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_DB68A5BDF0304F2280758B13981D7929"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -207,8 +201,62 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_FA2574A382F444D88FD9AF8CADC4ADFD"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_36095A772B80407AAE2B7B041B0AC2A0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_2F2A7FF5D3FC4679BF3F499251A8B90A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_0B8C760035425D6C0629696D59029CE2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_FA2574A382F444D88FD9AF8CADC4ADFD"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_1123DD1830968B74E4C85034444F6BB0"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_B2FFBC8E8C77400498022DAA18F3B383"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_328E29D78D774211674D9CA133F72471"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_789AF2EB487444B29D9E05380824E9F1"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_D6EC2C851CF1513D4B582418F921492A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -250,18 +298,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A08AC96312CB4F918AED9F9B7377DC3B"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D6EC2C851CF1513D4B582418F921492A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_59D7430603D44256815DA9B7E340B568"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -274,43 +310,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_4ACABCD41C83473E8F4771863208353D"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_328E29D78D774211674D9CA133F72471"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3DAFEAC935C84044AEDE581DA7BFF5F4"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1123DD1830968B74E4C85034444F6BB0"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_1AA7549CDA6048568045FCF144ABBA89"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0C56A8B6A03D44829B99DF99C410AFD8"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0B8C760035425D6C0629696D59029CE2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -503,37 +503,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0C56A8B6A03D44829B99DF99C410AFD8"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:TwainKodak, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_0C56A8B6A03D44829B99DF99C410AFD8"
-                    {
-                    "Name" = "8:TwainKodak.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\TUD2.0\\TwainKodak\\TwainKodak.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_1123DD1830968B74E4C85034444F6BB0"
             {
             "AssemblyRegister" = "3:1"
@@ -647,6 +616,37 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2F2A7FF5D3FC4679BF3F499251A8B90A"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:TwainKodak, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_2F2A7FF5D3FC4679BF3F499251A8B90A"
+                    {
+                    "Name" = "8:TwainKodak.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\TwainKodak\\TwainKodak.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_328E29D78D774211674D9CA133F72471"
             {
             "AssemblyRegister" = "3:1"
@@ -709,37 +709,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3DAFEAC935C84044AEDE581DA7BFF5F4"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:TopazSigPad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_3DAFEAC935C84044AEDE581DA7BFF5F4"
-                    {
-                    "Name" = "8:TopazSigPad.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\TUD2.0\\Topaz\\TopazSigPad.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3DDF8A6BF481E5E715B6C39AF6BE451E"
             {
             "AssemblyRegister" = "3:1"
@@ -771,57 +740,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4ACABCD41C83473E8F4771863208353D"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:GemaltoScanner, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_4ACABCD41C83473E8F4771863208353D"
-                    {
-                    "Name" = "8:GemaltoScanner.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\TUD2.0\\Gemalto\\GemaltoScanner.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4B5CC28334294DF58750F04FBD53A9AD"
-            {
-            "SourcePath" = "8:..\\TUD2.0\\TwainKodak\\TwainKodak.exe.config"
-            "TargetName" = "8:TwainKodak.exe.config"
-            "Tag" = "8:"
-            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_4E3A0B2443EAD54C550E0DFA418EB94E"
             {
             "AssemblyRegister" = "3:1"
@@ -851,6 +769,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5007D13D72B94C6A98FD315928E54816"
+            {
+            "SourcePath" = "8:..\\TUD2.0\\Topaz\\TopazSigPad.exe.config"
+            "TargetName" = "8:TopazSigPad.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_59D7430603D44256815DA9B7E340B568"
@@ -915,26 +853,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_5F19800422A047C59ACDED26FED3EBE5"
-            {
-            "SourcePath" = "8:..\\TUD2.0\\Topaz\\TopazSigPad.exe.config"
-            "TargetName" = "8:TopazSigPad.exe.config"
-            "Tag" = "8:"
-            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_614656EE453BF8F52CF5F1EF1D7CABA6"
             {
             "AssemblyRegister" = "3:1"
@@ -966,30 +884,21 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_6690B224A23140FC99FD358281A418B3"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_789AF2EB487444B29D9E05380824E9F1"
             {
-            "SourcePath" = "8:..\\TUD2.0\\Gemalto\\GemaltoScanner.exe.config"
-            "TargetName" = "8:GemaltoScanner.exe.config"
-            "Tag" = "8:"
-            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_75A15D1578EB46FD8C6A8977C4B34DB7"
-            {
-            "SourcePath" = "8:..\\TUD2.0\\ESeek\\ESeekScanner.exe.config"
-            "TargetName" = "8:ESeekScanner.exe.config"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:ESeekScanner, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_789AF2EB487444B29D9E05380824E9F1"
+                    {
+                    "Name" = "8:ESeekScanner.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\ESeek\\ESeekScanner.exe"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
             "Condition" = "8:"
@@ -1026,10 +935,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9427E41D67604033B32D66FFB22CB1D2"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_88CE62BF855F4D1594831C2787F801AF"
             {
-            "SourcePath" = "8:..\\TUD2.0\\FingerPrint\\HamsterFingerprintReader.exe.config"
-            "TargetName" = "8:HamsterFingerprintReader.exe.config"
+            "SourcePath" = "8:..\\TUD2.0\\Gemalto\\GemaltoScanner.exe.config"
+            "TargetName" = "8:GemaltoScanner.exe.config"
             "Tag" = "8:"
             "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
             "Condition" = "8:"
@@ -1046,21 +955,10 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A08AC96312CB4F918AED9F9B7377DC3B"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9427E41D67604033B32D66FFB22CB1D2"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:ESeekScanner, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_A08AC96312CB4F918AED9F9B7377DC3B"
-                    {
-                    "Name" = "8:ESeekScanner.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\TUD2.0\\ESeek\\ESeekScanner.exe"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\TUD2.0\\FingerPrint\\HamsterFingerprintReader.exe.config"
+            "TargetName" = "8:HamsterFingerprintReader.exe.config"
             "Tag" = "8:"
             "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
             "Condition" = "8:"
@@ -1091,6 +989,37 @@
                     }
                 }
             "SourcePath" = "8:..\\TUD2.0\\ESeek\\CyUSB.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B2FFBC8E8C77400498022DAA18F3B383"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:GemaltoScanner, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_B2FFBC8E8C77400498022DAA18F3B383"
+                    {
+                    "Name" = "8:GemaltoScanner.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\Gemalto\\GemaltoScanner.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
@@ -1232,6 +1161,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D52070E7FDDA4AFCB5A197641C063B9C"
+            {
+            "SourcePath" = "8:..\\TUD2.0\\ESeek\\ESeekScanner.exe.config"
+            "TargetName" = "8:ESeekScanner.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D6EC2C851CF1513D4B582418F921492A"
             {
             "AssemblyRegister" = "3:1"
@@ -1294,6 +1243,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DB68A5BDF0304F2280758B13981D7929"
+            {
+            "SourcePath" = "8:..\\TUD2.0\\TwainKodak\\TwainKodak.exe.config"
+            "TargetName" = "8:TwainKodak.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DCB2BD84DEE24300B03A161D773C15FE"
             {
             "SourcePath" = "8:..\\TUD2.0\\Waycom\\ScrapDragon.Signature.Wacom.exe.config"
@@ -1328,6 +1297,37 @@
                     }
                 }
             "SourcePath" = "8:..\\TUD2.0\\Topaz\\SigPlusNET.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FA2574A382F444D88FD9AF8CADC4ADFD"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:TopazSigPad, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_FA2574A382F444D88FD9AF8CADC4ADFD"
+                    {
+                    "Name" = "8:TopazSigPad.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\TUD2.0\\Topaz\\TopazSigPad.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_735C2BF53A8E4EB5B8CEB3D7C000FB83"
