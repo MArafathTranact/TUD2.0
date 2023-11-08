@@ -115,6 +115,9 @@
     <Compile Include="TwainKodak\HandleTwainKodakScanner.cs" />
     <Compile Include="Waycom\HandleWaycomSignaturePad.cs" />
     <Compile Include="WebSocketListener.cs" />
+    <Compile Include="WeightScale\ComDefinition.cs" />
+    <Compile Include="WeightScale\ComObject.cs" />
+    <Compile Include="WeightScale\HandleScaleReader.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="ESeek\CyUSB.dll" />

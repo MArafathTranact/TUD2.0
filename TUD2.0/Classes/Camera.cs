@@ -25,5 +25,23 @@ namespace TUD2._0.Classes
         public bool isBasic { get; set; }
         public string workstation_ip { get; set; }
         public string workstation_port { get; set; }
+
+        public string scale_camera_name { get; set; }
+        public int? BaudRate { get; set; }
+        public string DataStop { get; set; }
+        public int? ScaleParity { get; set; }
+        public int? ComPort { get; set; }
+        public int? BufferSize { get; set; }
+        public int? WeightBeginPosition { get; set; }
+        public int? WeightEndPosition { get; set; }
+        public int? MotionPosition { get; set; }
+        public int? UnitsPosition { get; set; }
+        public int? ModePosition { get; set; }
+        public int? StartOfText { get; set; }
+        public int? NoMotionChar { get; set; }
+        public int? LbUnitsChar { get; set; }
+        public int? GrossModeChar { get; set; }
+        public int? MaxCharToRead { get; set; }
+        public int? NumberOfMatchingRead { get; set; }
     }
 }

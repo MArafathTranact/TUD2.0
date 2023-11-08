@@ -55,7 +55,7 @@ namespace TUD2._0.Cameras
 
         }
 
-        private async Task TriggerCamera(JpeggerCameraCaptureRequest request)
+        public async Task TriggerCamera(JpeggerCameraCaptureRequest request)
         {
             try
             {

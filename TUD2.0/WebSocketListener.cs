@@ -19,6 +19,8 @@ using TUD2._0.ESeek;
 using TUD2._0.Gemalto;
 using TUD2._0.TwainKodak;
 using TUD2._0.Cameras;
+using TUD2._0.WeightScale;
+using Newtonsoft.Json.Linq;
 
 namespace TUD2._0
 {
@@ -126,7 +128,8 @@ namespace TUD2._0
                 }
                 ClientWebSocket ws = new ClientWebSocket();
 
-                //ws.Options.SetRequestHeader("Token", jpeggerToken);
+                if (addToken == 1 && !string.IsNullOrWhiteSpace(jpeggerToken))
+                    ws.Options.SetRequestHeader("Token", jpeggerToken);
                 ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
                 await ws.ConnectAsync(new Uri(workStationWebSocket), CancellationToken.None);
                 LogEvents($" Work Station '{WorkStationName}' : Web Socket connected... ");
@@ -142,7 +145,15 @@ namespace TUD2._0
 
                         var bytes = Encoding.UTF8.GetBytes(subscription);
                         await ws.SendAsync(new ArraySegment<byte>(bytes), WebSocketMessageType.Text, endOfMessage: true, cancellationToken: CancellationToken.None);
-                        LogEvents($" Work Station '{WorkStationName}' : Listening for Web Socket command... ");
+
+                        if (ws != null && ws.State != WebSocketState.Open)
+                        {
+                            LogEvents($" Work Station '{WorkStationName}' : Listening for Web Socket command... ");
+                        }
+                        else
+                        {
+                            LogEvents($" Work Station '{WorkStationName}' : Web Socket Closed");
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -161,7 +172,7 @@ namespace TUD2._0
                 Logger.LogExceptionWithNoLock($" Work Station '{WorkStationName}' : Exception at WebSocketListener.ConnectWebSocket.", ex);
                 LogEvents($" Work Station '{WorkStationName}' : Retrying to connect... {workStationWebSocket}");
 
-                await Task.Delay(5000);
+                await Task.Delay(30000);
                 await ConnectWebSocket();
             }
         }
@@ -301,6 +312,17 @@ namespace TUD2._0
                                                     LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Gemalto License Scanner ");
                                                     webSocketCommandProcessed = false;
                                                     webSocketCommandHandler = new WebSocketCommandHandler(new HandleGemaltoLicenseScanner());
+                                                    webSocketCommandHandler.ProcessCommandHandle(camera, command, WorkStationId);
+                                                    break;
+                                                case "Scale Reader":
+                                                    if (camera.workstation_ip != WorkStationIp && camera.workstation_port != WorkStationPort && camera.IsNetCam != 0)
+                                                    {
+                                                        LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Scale Reader for different workstation");
+                                                        return;
+                                                    }
+                                                    LogEvents($" Work Station '{WorkStationName}' : Command received to trigger Scale Reader ");
+                                                    webSocketCommandProcessed = false;
+                                                    webSocketCommandHandler = new WebSocketCommandHandler(new HandleScaleReader(Cameras, CameraGroups));
                                                     webSocketCommandHandler.ProcessCommandHandle(camera, command, WorkStationId);
                                                     break;
                                                 default:
